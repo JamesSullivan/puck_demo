@@ -15,6 +15,7 @@
     "@measured/puck-adaptor-strapi": "^0.7.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.5",
+    "@netlify/plugin-nextjs": "^4.40.2",
     "antd": "^5.6.1",
     "classnames": "^2.3.2",
     "next": "^13.5.2",
