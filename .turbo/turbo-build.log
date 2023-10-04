@@ -1,0 +1,242 @@
+yarn run v1.22.19
+$ next build
+   Creating an optimized production build...
+ ⚠ Compiled with warnings
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./Box' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./CssBaseline' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./darkScrollbar' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./Fade' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./Grow' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./Hidden' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./MenuList' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./NoSsr' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./Popper' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./Portal' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./RadioGroup' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./Slide' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./Stack' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./SwipeableDrawer' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./TextareaAutosize' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./useMediaQuery' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./usePagination' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./useScrollTrigger' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./Zoom' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./GlobalStyles' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+The requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./generateUtilityClass' contains conflicting star exports for the name '__esModule' with the previous requested module '__barrel_optimize__?names=ThemeProvider,createTheme&wildcard!=!./utils'
+
+Import trace for requested module:
+__barrel_optimize__?names=Grid,Link,ThemeProvider,createTheme!=!../../node_modules/@mui/material/index.js
+./app/configs/material-ui/root.tsx
+./app/configs/material-ui/index.tsx
+./app/configs/ sync ^\.\/.*\/$
+./app/[...puckPath]/client.tsx
+
+   Linting and checking validity of types...
+   Collecting page data...
+   Generating static pages (0/4)...
+   Generating static pages (1/4)
+
+   Generating static pages (2/4)
+
+   Generating static pages (3/4)
+
+ ✓ Generating static pages (4/4)
+   Finalizing page optimization...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    149 B          1.12 MB
+├ ○ /_not-found                          881 B          80.3 kB
+└ λ /[...puckPath]                       149 B          1.12 MB
++ First Load JS shared by all            79.4 kB
+  ├ chunks/1dd3208c-e7fef1856f3527d2.js  50.8 kB
+  ├ chunks/858-eea8ccf017ff26a9.js       26.6 kB
+  ├ chunks/main-app-e32c356955743d7c.js  225 B
+  └ chunks/webpack-255bbdb5a93db778.js   1.77 kB
+
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+Done in 79.17s.
