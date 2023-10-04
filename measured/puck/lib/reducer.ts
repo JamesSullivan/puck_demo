@@ -12,6 +12,7 @@ import {
   removeRelatedZones,
 } from "./reduce-related-zones";
 import { generateId } from "./generate-id";
+import { recordDiff } from "./use-puck-history";
 
 export type ActionType = "insert" | "reorder";
 
@@ -22,34 +23,34 @@ export const addToZoneCache = (key: string, data: Content) => {
   zoneCache[key] = data;
 };
 
-type InsertAction = {
+export type InsertAction = {
   type: "insert";
   componentType: string;
   destinationIndex: number;
   destinationZone: string;
 };
 
-type DuplicateAction = {
+export type DuplicateAction = {
   type: "duplicate";
   sourceIndex: number;
   sourceZone: string;
 };
 
-type ReplaceAction = {
+export type ReplaceAction = {
   type: "replace";
   destinationIndex: number;
   destinationZone: string;
   data: any;
 };
 
-type ReorderAction = {
+export type ReorderAction = {
   type: "reorder";
   sourceIndex: number;
   destinationIndex: number;
   destinationZone: string;
 };
 
-type MoveAction = {
+export type MoveAction = {
   type: "move";
   sourceIndex: number;
   sourceZone: string;
@@ -57,23 +58,23 @@ type MoveAction = {
   destinationZone: string;
 };
 
-type RemoveAction = {
+export type RemoveAction = {
   type: "remove";
   index: number;
   zone: string;
 };
 
-type SetDataAction = {
+export type SetDataAction = {
   type: "set";
   data: Partial<Data>;
 };
 
-type RegisterZoneAction = {
+export type RegisterZoneAction = {
   type: "registerZone";
   zone: string;
 };
 
-type UnregisterZoneAction = {
+export type UnregisterZoneAction = {
   type: "unregisterZone";
   zone: string;
 };
@@ -91,9 +92,20 @@ export type PuckAction =
 
 export type StateReducer = Reducer<Data, PuckAction>;
 
-export const createReducer =
-  ({ config }: { config: Config }): StateReducer =>
-  (data, action) => {
+const storeInterceptor = (reducer: StateReducer) => {
+  return (data, action) => {
+    const newData = reducer(data, action);
+
+    if (!["registerZone", "unregisterZone", "set"].includes(action.type)) {
+      recordDiff(newData);
+    }
+
+    return newData;
+  };
+};
+
+export const createReducer = ({ config }: { config: Config }): StateReducer =>
+  storeInterceptor((data, action) => {
     if (action.type === "insert") {
       const emptyComponentData = {
         type: action.componentType,
@@ -336,4 +348,4 @@ export const createReducer =
     }
 
     return data;
-  };
+  });

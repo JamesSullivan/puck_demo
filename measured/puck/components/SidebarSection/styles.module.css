@@ -2,6 +2,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  color: black;
 }
 
 .SidebarSection:last-of-type {
@@ -12,7 +13,7 @@
   background: white;
   padding: 16px;
   border-bottom: 1px solid var(--puck-color-grey-8);
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .SidebarSection-content {

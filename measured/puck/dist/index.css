@@ -141,7 +141,7 @@
 
 /* styles/global.css */
 
-/* css-module:/home/sullija/dev/javascript/puck/packages/core/components/Button/Button.module.css/#css-module-data */
+/* css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/Button/Button.module.css/#css-module-data */
 ._Button_1muck_1 {
   appearance: none;
   background: none;
@@ -209,7 +209,7 @@
   width: 100%;
 }
 
-/* css-module:/home/sullija/dev/javascript/puck/packages/core/components/DraggableComponent/styles.module.css/#css-module-data */
+/* css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/DraggableComponent/styles.module.css/#css-module-data */
 ._DraggableComponent_1nlo8_1 {
   position: relative;
   pointer-events: auto;
@@ -310,7 +310,7 @@
   cursor: pointer;
 }
 
-/* css-module:/home/sullija/dev/javascript/puck/packages/core/components/DropZone/styles.module.css/#css-module-data */
+/* css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/DropZone/styles.module.css/#css-module-data */
 ._DropZone_1980k_1 {
   margin-left: auto;
   margin-right: auto;
@@ -360,7 +360,7 @@
   z-index: 1;
 }
 
-/* css-module:/home/sullija/dev/javascript/puck/packages/core/components/IconButton/IconButton.module.css/#css-module-data */
+/* css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/IconButton/IconButton.module.css/#css-module-data */
 ._IconButton_13gzt_1 {
   background: transparent;
   border: none;
@@ -377,7 +377,7 @@
   cursor: pointer;
 }
 
-/* css-module:/home/sullija/dev/javascript/puck/packages/core/components/ExternalInput/styles.module.css/#css-module-data */
+/* css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/ExternalInput/styles.module.css/#css-module-data */
 ._ExternalInput_l4bks_1 {
   font-family: var(--puck-font-stack);
 }
@@ -501,39 +501,39 @@
   padding-left: 20px;
 }
 
-/* css-module:/home/sullija/dev/javascript/puck/packages/core/components/InputOrGroup/styles.module.css/#css-module-data */
-._Input_16exs_1 {
+/* css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/InputOrGroup/styles.module.css/#css-module-data */
+._Input_izwhv_1 {
   color: var(--puck-color-grey-3);
   padding: 16px;
   padding-bottom: 12px;
   display: block;
   font-family: var(--puck-font-stack);
 }
-._Input_16exs_1 ._Input_16exs_1 {
+._Input_izwhv_1 ._Input_izwhv_1 {
   padding: 0px;
 }
-._Input_16exs_1 * {
+._Input_izwhv_1 * {
   box-sizing: border-box;
 }
-._Input_16exs_1 + ._Input_16exs_1 {
+._Input_izwhv_1 + ._Input_izwhv_1 {
   border-top: 1px solid var(--puck-color-grey-8);
   margin-top: 8px;
 }
-._Input_16exs_1 ._Input_16exs_1 + ._Input_16exs_1 {
+._Input_izwhv_1 ._Input_izwhv_1 + ._Input_izwhv_1 {
   border-top: 0px;
   margin-top: 12px;
 }
-._Input-label_16exs_27 {
+._Input-label_izwhv_27 {
   display: flex;
   padding-bottom: 12px;
   font-size: var(--puck-font-size-xxs);
   font-weight: 600;
 }
-._Input-labelIcon_16exs_34 {
+._Input-labelIcon_izwhv_34 {
   color: var(--puck-color-grey-6);
   margin-right: 4px;
 }
-._Input-input_16exs_39 {
+._Input-input_izwhv_39 {
   border-width: 1px;
   border-style: solid;
   border-color: var(--puck-color-grey-8);
@@ -542,7 +542,7 @@
   padding: 12px 16px;
   width: 100%;
 }
-._Input_16exs_1 select {
+._Input_izwhv_1 select {
   appearance: none;
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%23c3c3c3'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
   background-size: 12px;
@@ -550,19 +550,19 @@
   background-repeat: no-repeat;
   background-color: white;
 }
-._Input--readOnly_16exs_60 ._Input-input_16exs_39 {
+._Input--readOnly_izwhv_60 ._Input-input_izwhv_39 {
   background-color: var(--puck-color-grey-10);
   border-color: var(--puck-color-grey-8);
 }
-._Input-input_16exs_39:hover {
+._Input-input_izwhv_39:hover {
   border-color: var(--puck-color-neutral-3);
 }
-._Input-arrayItem_16exs_69 {
+._Input-arrayItem_izwhv_69 {
   background: white;
   border: 1px solid var(--puck-color-grey-8);
   border-radius: 4px;
 }
-._Input-arrayItem_16exs_69 > summary {
+._Input-arrayItem_izwhv_69 > summary {
   color: var(--puck-color-grey-3);
   display: flex;
   align-items: center;
@@ -572,43 +572,42 @@
   padding: 12px 16px;
   position: relative;
 }
-._Input-arrayItem_16exs_69 > summary:hover {
+._Input-arrayItem_izwhv_69 > summary:hover {
   cursor: pointer;
   color: var(--puck-color-blue);
 }
-._Input-arrayItem_16exs_69 > summary::-webkit-details-marker {
+._Input-arrayItem_izwhv_69 > summary::-webkit-details-marker {
   display: none;
 }
-._Input-arrayItem_16exs_69 > ._Input-fieldset_16exs_95 {
+._Input-arrayItem_izwhv_69 > ._Input-fieldset_izwhv_95 {
   background-color: var(--puck-color-grey-11);
   border: none;
   border-top: 1px solid var(--puck-color-grey-8);
   margin: 0;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  padding: 16px;
 }
-._Input-arrayItem_16exs_69 > ._Input-fieldset_16exs_95 ._Input_16exs_1 + ._Input-arrayItem_16exs_69 > ._Input-fieldset_16exs_95 ._Input_16exs_1 {
+._Input-arrayItem_izwhv_69 > ._Input-fieldset_izwhv_95 ._Input_izwhv_1 + ._Input-arrayItem_izwhv_69 > ._Input-fieldset_izwhv_95 ._Input_izwhv_1 {
   margin-top: 16px;
 }
-._Input-arrayItem_16exs_69 > ._Input-fieldset_16exs_95 ._Input-label_16exs_27 {
+._Input-arrayItem_izwhv_69 > ._Input-fieldset_izwhv_95 ._Input-label_izwhv_27 {
   padding-bottom: 4px;
 }
-._Input-arrayItem_16exs_69 ._Input-arrayItemAction_16exs_117 {
+._Input-arrayItem_izwhv_69 ._Input-arrayItemAction_izwhv_116 {
   border-radius: 4px;
   opacity: 0;
 }
-._Input-arrayItem_16exs_69 summary:hover ._Input-arrayItemAction_16exs_117 {
+._Input-arrayItem_izwhv_69 summary:hover ._Input-arrayItemAction_izwhv_116 {
   opacity: 1;
 }
-._Input-arrayItem_16exs_69 ._Input-arrayItemAction_16exs_117:hover {
+._Input-arrayItem_izwhv_69 ._Input-arrayItemAction_izwhv_116:hover {
   background: var(--puck-color-grey-9);
   color: var(--puck-color-blue);
   cursor: pointer;
 }
-._Input-arrayItem_16exs_69 + ._Input-arrayItem_16exs_69 {
+._Input-arrayItem_izwhv_69 + ._Input-arrayItem_izwhv_69 {
   margin-top: 12px;
 }
-._Input-addButton_16exs_136 {
+._Input-addButton_izwhv_135 {
   background-color: white;
   border: none;
   border-radius: 4px;
@@ -620,49 +619,49 @@
   padding: 12px 16px;
   text-align: left;
 }
-._Input-addButton_16exs_136:hover {
+._Input-addButton_izwhv_135:hover {
   background: var(--puck-color-grey-10);
 }
-._Input-array_16exs_69 {
+._Input-array_izwhv_69 {
   overflow: hidden;
 }
-._Input-radioGroupItems_16exs_157 {
+._Input-radioGroupItems_izwhv_156 {
   display: flex;
   border: 1px solid var(--puck-color-grey-7);
   border-radius: 4px;
   flex-wrap: wrap;
   overflow: hidden;
 }
-._Input-radio_16exs_157 {
+._Input-radio_izwhv_156 {
   border-right: 1px solid var(--puck-color-grey-7);
   flex-grow: 1;
 }
-._Input-radio_16exs_157:last-of-type {
+._Input-radio_izwhv_156:last-of-type {
   border-right: none;
 }
-._Input-radioInner_16exs_174 {
+._Input-radioInner_izwhv_173 {
   color: var(--puck-color-grey-4);
   font-size: var(--puck-font-size-xxxs);
   padding: 8px 12px;
   text-align: center;
 }
-._Input-radioInner_16exs_174:hover {
+._Input-radioInner_izwhv_173:hover {
   background-color: var(--puck-color-azure-9);
   cursor: pointer;
 }
-._Input-radio_16exs_157 ._Input-radioInput_16exs_186:checked ~ ._Input-radioInner_16exs_174 {
+._Input-radio_izwhv_156 ._Input-radioInput_izwhv_185:checked ~ ._Input-radioInner_izwhv_173 {
   background-color: var(--puck-color-azure-9);
   color: var(--puck-color-grey-2);
   font-weight: 500;
 }
-._Input-radio_16exs_157 ._Input-radioInput_16exs_186 {
+._Input-radio_izwhv_156 ._Input-radioInput_izwhv_185 {
   display: none;
 }
-._Input_16exs_1 textarea._Input-input_16exs_39 {
+._Input_izwhv_1 textarea._Input-input_izwhv_39 {
   margin-bottom: -4px;
 }
 
-/* css-module:/home/sullija/dev/javascript/puck/packages/core/components/ComponentList/styles.module.css/#css-module-data */
+/* css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/ComponentList/styles.module.css/#css-module-data */
 ._ComponentList_1ybn0_1 {
   display: grid;
   font-family: var(--puck-font-stack);
@@ -694,56 +693,57 @@
   background-color: var(--puck-color-azure-9);
 }
 
-/* css-module:/home/sullija/dev/javascript/puck/packages/core/components/SidebarSection/styles.module.css/#css-module-data */
-._SidebarSection_ivnrs_1 {
+/* css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/SidebarSection/styles.module.css/#css-module-data */
+._SidebarSection_f1p35_1 {
   display: flex;
   position: relative;
   flex-direction: column;
+  color: black;
 }
-._SidebarSection_ivnrs_1:last-of-type {
+._SidebarSection_f1p35_1:last-of-type {
   flex-grow: 1;
 }
-._SidebarSection-title_ivnrs_11 {
+._SidebarSection-title_f1p35_12 {
   background: white;
   padding: 16px;
   border-bottom: 1px solid var(--puck-color-grey-8);
-  overflow-x: scroll;
+  overflow-x: auto;
 }
-._SidebarSection-content_ivnrs_18 {
+._SidebarSection-content_f1p35_19 {
   border-bottom: 1px solid var(--puck-color-grey-8);
   padding: 16px;
 }
-._SidebarSection--noPadding_ivnrs_23 ._SidebarSection-content_ivnrs_18 {
+._SidebarSection--noPadding_f1p35_24 ._SidebarSection-content_f1p35_19 {
   padding: 0px;
 }
-._SidebarSection_ivnrs_1:last-of-type ._SidebarSection-content_ivnrs_18 {
+._SidebarSection_f1p35_1:last-of-type ._SidebarSection-content_f1p35_19 {
   border-bottom: none;
   flex-grow: 1;
 }
-._SidebarSection-breadcrumbLabel_ivnrs_32 {
+._SidebarSection-breadcrumbLabel_f1p35_33 {
   color: var(--puck-color-azure-3);
   flex-shrink: 0;
 }
-._SidebarSection-breadcrumbLabel_ivnrs_32:hover {
+._SidebarSection-breadcrumbLabel_f1p35_33:hover {
   color: var(--puck-color-azure-4);
   cursor: pointer;
   text-decoration: underline;
 }
-._SidebarSection-breadcrumbs_ivnrs_43 {
+._SidebarSection-breadcrumbs_f1p35_44 {
   align-items: center;
   display: flex;
   gap: 4px;
 }
-._SidebarSection-breadcrumb_ivnrs_32 {
+._SidebarSection-breadcrumb_f1p35_33 {
   align-items: center;
   display: flex;
   gap: 4px;
 }
-._SidebarSection-heading_ivnrs_55 {
+._SidebarSection-heading_f1p35_56 {
   padding-right: 16px;
 }
 
-/* css-module:/home/sullija/dev/javascript/puck/packages/core/components/Heading/styles.module.css/#css-module-data */
+/* css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/Heading/styles.module.css/#css-module-data */
 ._Heading_1y35v_1 {
   display: block;
   font-family: var(--puck-font-stack);
@@ -780,7 +780,7 @@
   font-size: var(--puck-font-size-xs);
 }
 
-/* css-module:/home/sullija/dev/javascript/puck/packages/core/components/LayerTree/styles.module.css/#css-module-data */
+/* css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/LayerTree/styles.module.css/#css-module-data */
 ._LayerTree_1dcmd_1 {
   color: var(--puck-color-grey-2);
   font-family: var(--puck-font-stack);

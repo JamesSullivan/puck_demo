@@ -94,6 +94,7 @@ var init_react_import = __esm({
 // ../../node_modules/classnames/index.js
 var require_classnames = __commonJS({
   "../../node_modules/classnames/index.js"(exports, module2) {
+    "use strict";
     init_react_import();
     (function() {
       "use strict";
@@ -143,9 +144,967 @@ var require_classnames = __commonJS({
   }
 });
 
+// ../../node_modules/prop-types/node_modules/react-is/cjs/react-is.production.min.js
+var require_react_is_production_min = __commonJS({
+  "../../node_modules/prop-types/node_modules/react-is/cjs/react-is.production.min.js"(exports) {
+    "use strict";
+    init_react_import();
+    var b = "function" === typeof Symbol && Symbol.for;
+    var c = b ? Symbol.for("react.element") : 60103;
+    var d = b ? Symbol.for("react.portal") : 60106;
+    var e = b ? Symbol.for("react.fragment") : 60107;
+    var f = b ? Symbol.for("react.strict_mode") : 60108;
+    var g = b ? Symbol.for("react.profiler") : 60114;
+    var h = b ? Symbol.for("react.provider") : 60109;
+    var k = b ? Symbol.for("react.context") : 60110;
+    var l = b ? Symbol.for("react.async_mode") : 60111;
+    var m = b ? Symbol.for("react.concurrent_mode") : 60111;
+    var n = b ? Symbol.for("react.forward_ref") : 60112;
+    var p = b ? Symbol.for("react.suspense") : 60113;
+    var q = b ? Symbol.for("react.suspense_list") : 60120;
+    var r = b ? Symbol.for("react.memo") : 60115;
+    var t = b ? Symbol.for("react.lazy") : 60116;
+    var v = b ? Symbol.for("react.block") : 60121;
+    var w = b ? Symbol.for("react.fundamental") : 60117;
+    var x = b ? Symbol.for("react.responder") : 60118;
+    var y = b ? Symbol.for("react.scope") : 60119;
+    function z(a) {
+      if ("object" === typeof a && null !== a) {
+        var u = a.$$typeof;
+        switch (u) {
+          case c:
+            switch (a = a.type, a) {
+              case l:
+              case m:
+              case e:
+              case g:
+              case f:
+              case p:
+                return a;
+              default:
+                switch (a = a && a.$$typeof, a) {
+                  case k:
+                  case n:
+                  case t:
+                  case r:
+                  case h:
+                    return a;
+                  default:
+                    return u;
+                }
+            }
+          case d:
+            return u;
+        }
+      }
+    }
+    function A(a) {
+      return z(a) === m;
+    }
+    exports.AsyncMode = l;
+    exports.ConcurrentMode = m;
+    exports.ContextConsumer = k;
+    exports.ContextProvider = h;
+    exports.Element = c;
+    exports.ForwardRef = n;
+    exports.Fragment = e;
+    exports.Lazy = t;
+    exports.Memo = r;
+    exports.Portal = d;
+    exports.Profiler = g;
+    exports.StrictMode = f;
+    exports.Suspense = p;
+    exports.isAsyncMode = function(a) {
+      return A(a) || z(a) === l;
+    };
+    exports.isConcurrentMode = A;
+    exports.isContextConsumer = function(a) {
+      return z(a) === k;
+    };
+    exports.isContextProvider = function(a) {
+      return z(a) === h;
+    };
+    exports.isElement = function(a) {
+      return "object" === typeof a && null !== a && a.$$typeof === c;
+    };
+    exports.isForwardRef = function(a) {
+      return z(a) === n;
+    };
+    exports.isFragment = function(a) {
+      return z(a) === e;
+    };
+    exports.isLazy = function(a) {
+      return z(a) === t;
+    };
+    exports.isMemo = function(a) {
+      return z(a) === r;
+    };
+    exports.isPortal = function(a) {
+      return z(a) === d;
+    };
+    exports.isProfiler = function(a) {
+      return z(a) === g;
+    };
+    exports.isStrictMode = function(a) {
+      return z(a) === f;
+    };
+    exports.isSuspense = function(a) {
+      return z(a) === p;
+    };
+    exports.isValidElementType = function(a) {
+      return "string" === typeof a || "function" === typeof a || a === e || a === m || a === g || a === f || a === p || a === q || "object" === typeof a && null !== a && (a.$$typeof === t || a.$$typeof === r || a.$$typeof === h || a.$$typeof === k || a.$$typeof === n || a.$$typeof === w || a.$$typeof === x || a.$$typeof === y || a.$$typeof === v);
+    };
+    exports.typeOf = z;
+  }
+});
+
+// ../../node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js
+var require_react_is_development = __commonJS({
+  "../../node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js"(exports) {
+    "use strict";
+    init_react_import();
+    if (process.env.NODE_ENV !== "production") {
+      (function() {
+        "use strict";
+        var hasSymbol = typeof Symbol === "function" && Symbol.for;
+        var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for("react.element") : 60103;
+        var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for("react.portal") : 60106;
+        var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for("react.fragment") : 60107;
+        var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for("react.strict_mode") : 60108;
+        var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for("react.profiler") : 60114;
+        var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for("react.provider") : 60109;
+        var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for("react.context") : 60110;
+        var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for("react.async_mode") : 60111;
+        var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for("react.concurrent_mode") : 60111;
+        var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for("react.forward_ref") : 60112;
+        var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for("react.suspense") : 60113;
+        var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for("react.suspense_list") : 60120;
+        var REACT_MEMO_TYPE = hasSymbol ? Symbol.for("react.memo") : 60115;
+        var REACT_LAZY_TYPE = hasSymbol ? Symbol.for("react.lazy") : 60116;
+        var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for("react.block") : 60121;
+        var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for("react.fundamental") : 60117;
+        var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for("react.responder") : 60118;
+        var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for("react.scope") : 60119;
+        function isValidElementType(type) {
+          return typeof type === "string" || typeof type === "function" || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+          type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === "object" && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+        }
+        function typeOf(object) {
+          if (typeof object === "object" && object !== null) {
+            var $$typeof = object.$$typeof;
+            switch ($$typeof) {
+              case REACT_ELEMENT_TYPE:
+                var type = object.type;
+                switch (type) {
+                  case REACT_ASYNC_MODE_TYPE:
+                  case REACT_CONCURRENT_MODE_TYPE:
+                  case REACT_FRAGMENT_TYPE:
+                  case REACT_PROFILER_TYPE:
+                  case REACT_STRICT_MODE_TYPE:
+                  case REACT_SUSPENSE_TYPE:
+                    return type;
+                  default:
+                    var $$typeofType = type && type.$$typeof;
+                    switch ($$typeofType) {
+                      case REACT_CONTEXT_TYPE:
+                      case REACT_FORWARD_REF_TYPE:
+                      case REACT_LAZY_TYPE:
+                      case REACT_MEMO_TYPE:
+                      case REACT_PROVIDER_TYPE:
+                        return $$typeofType;
+                      default:
+                        return $$typeof;
+                    }
+                }
+              case REACT_PORTAL_TYPE:
+                return $$typeof;
+            }
+          }
+          return void 0;
+        }
+        var AsyncMode = REACT_ASYNC_MODE_TYPE;
+        var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+        var ContextConsumer = REACT_CONTEXT_TYPE;
+        var ContextProvider = REACT_PROVIDER_TYPE;
+        var Element = REACT_ELEMENT_TYPE;
+        var ForwardRef = REACT_FORWARD_REF_TYPE;
+        var Fragment9 = REACT_FRAGMENT_TYPE;
+        var Lazy = REACT_LAZY_TYPE;
+        var Memo = REACT_MEMO_TYPE;
+        var Portal = REACT_PORTAL_TYPE;
+        var Profiler = REACT_PROFILER_TYPE;
+        var StrictMode = REACT_STRICT_MODE_TYPE;
+        var Suspense = REACT_SUSPENSE_TYPE;
+        var hasWarnedAboutDeprecatedIsAsyncMode = false;
+        function isAsyncMode(object) {
+          {
+            if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+              hasWarnedAboutDeprecatedIsAsyncMode = true;
+              console["warn"]("The ReactIs.isAsyncMode() alias has been deprecated, and will be removed in React 17+. Update your code to use ReactIs.isConcurrentMode() instead. It has the exact same API.");
+            }
+          }
+          return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+        }
+        function isConcurrentMode(object) {
+          return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+        }
+        function isContextConsumer(object) {
+          return typeOf(object) === REACT_CONTEXT_TYPE;
+        }
+        function isContextProvider(object) {
+          return typeOf(object) === REACT_PROVIDER_TYPE;
+        }
+        function isElement(object) {
+          return typeof object === "object" && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+        }
+        function isForwardRef(object) {
+          return typeOf(object) === REACT_FORWARD_REF_TYPE;
+        }
+        function isFragment(object) {
+          return typeOf(object) === REACT_FRAGMENT_TYPE;
+        }
+        function isLazy(object) {
+          return typeOf(object) === REACT_LAZY_TYPE;
+        }
+        function isMemo(object) {
+          return typeOf(object) === REACT_MEMO_TYPE;
+        }
+        function isPortal(object) {
+          return typeOf(object) === REACT_PORTAL_TYPE;
+        }
+        function isProfiler(object) {
+          return typeOf(object) === REACT_PROFILER_TYPE;
+        }
+        function isStrictMode(object) {
+          return typeOf(object) === REACT_STRICT_MODE_TYPE;
+        }
+        function isSuspense(object) {
+          return typeOf(object) === REACT_SUSPENSE_TYPE;
+        }
+        exports.AsyncMode = AsyncMode;
+        exports.ConcurrentMode = ConcurrentMode;
+        exports.ContextConsumer = ContextConsumer;
+        exports.ContextProvider = ContextProvider;
+        exports.Element = Element;
+        exports.ForwardRef = ForwardRef;
+        exports.Fragment = Fragment9;
+        exports.Lazy = Lazy;
+        exports.Memo = Memo;
+        exports.Portal = Portal;
+        exports.Profiler = Profiler;
+        exports.StrictMode = StrictMode;
+        exports.Suspense = Suspense;
+        exports.isAsyncMode = isAsyncMode;
+        exports.isConcurrentMode = isConcurrentMode;
+        exports.isContextConsumer = isContextConsumer;
+        exports.isContextProvider = isContextProvider;
+        exports.isElement = isElement;
+        exports.isForwardRef = isForwardRef;
+        exports.isFragment = isFragment;
+        exports.isLazy = isLazy;
+        exports.isMemo = isMemo;
+        exports.isPortal = isPortal;
+        exports.isProfiler = isProfiler;
+        exports.isStrictMode = isStrictMode;
+        exports.isSuspense = isSuspense;
+        exports.isValidElementType = isValidElementType;
+        exports.typeOf = typeOf;
+      })();
+    }
+  }
+});
+
+// ../../node_modules/prop-types/node_modules/react-is/index.js
+var require_react_is = __commonJS({
+  "../../node_modules/prop-types/node_modules/react-is/index.js"(exports, module2) {
+    "use strict";
+    init_react_import();
+    if (process.env.NODE_ENV === "production") {
+      module2.exports = require_react_is_production_min();
+    } else {
+      module2.exports = require_react_is_development();
+    }
+  }
+});
+
+// ../../node_modules/object-assign/index.js
+var require_object_assign = __commonJS({
+  "../../node_modules/object-assign/index.js"(exports, module2) {
+    "use strict";
+    init_react_import();
+    var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+    var hasOwnProperty = Object.prototype.hasOwnProperty;
+    var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+    function toObject(val) {
+      if (val === null || val === void 0) {
+        throw new TypeError("Object.assign cannot be called with null or undefined");
+      }
+      return Object(val);
+    }
+    function shouldUseNative() {
+      try {
+        if (!Object.assign) {
+          return false;
+        }
+        var test1 = new String("abc");
+        test1[5] = "de";
+        if (Object.getOwnPropertyNames(test1)[0] === "5") {
+          return false;
+        }
+        var test2 = {};
+        for (var i = 0; i < 10; i++) {
+          test2["_" + String.fromCharCode(i)] = i;
+        }
+        var order2 = Object.getOwnPropertyNames(test2).map(function(n) {
+          return test2[n];
+        });
+        if (order2.join("") !== "0123456789") {
+          return false;
+        }
+        var test3 = {};
+        "abcdefghijklmnopqrst".split("").forEach(function(letter) {
+          test3[letter] = letter;
+        });
+        if (Object.keys(Object.assign({}, test3)).join("") !== "abcdefghijklmnopqrst") {
+          return false;
+        }
+        return true;
+      } catch (err) {
+        return false;
+      }
+    }
+    module2.exports = shouldUseNative() ? Object.assign : function(target, source) {
+      var from;
+      var to = toObject(target);
+      var symbols;
+      for (var s = 1; s < arguments.length; s++) {
+        from = Object(arguments[s]);
+        for (var key in from) {
+          if (hasOwnProperty.call(from, key)) {
+            to[key] = from[key];
+          }
+        }
+        if (getOwnPropertySymbols) {
+          symbols = getOwnPropertySymbols(from);
+          for (var i = 0; i < symbols.length; i++) {
+            if (propIsEnumerable.call(from, symbols[i])) {
+              to[symbols[i]] = from[symbols[i]];
+            }
+          }
+        }
+      }
+      return to;
+    };
+  }
+});
+
+// ../../node_modules/prop-types/lib/ReactPropTypesSecret.js
+var require_ReactPropTypesSecret = __commonJS({
+  "../../node_modules/prop-types/lib/ReactPropTypesSecret.js"(exports, module2) {
+    "use strict";
+    init_react_import();
+    var ReactPropTypesSecret = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+    module2.exports = ReactPropTypesSecret;
+  }
+});
+
+// ../../node_modules/prop-types/lib/has.js
+var require_has = __commonJS({
+  "../../node_modules/prop-types/lib/has.js"(exports, module2) {
+    "use strict";
+    init_react_import();
+    module2.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+  }
+});
+
+// ../../node_modules/prop-types/checkPropTypes.js
+var require_checkPropTypes = __commonJS({
+  "../../node_modules/prop-types/checkPropTypes.js"(exports, module2) {
+    "use strict";
+    init_react_import();
+    var printWarning = function() {
+    };
+    if (process.env.NODE_ENV !== "production") {
+      ReactPropTypesSecret = require_ReactPropTypesSecret();
+      loggedTypeFailures = {};
+      has = require_has();
+      printWarning = function(text) {
+        var message = "Warning: " + text;
+        if (typeof console !== "undefined") {
+          console.error(message);
+        }
+        try {
+          throw new Error(message);
+        } catch (x) {
+        }
+      };
+    }
+    var ReactPropTypesSecret;
+    var loggedTypeFailures;
+    var has;
+    function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+      if (process.env.NODE_ENV !== "production") {
+        for (var typeSpecName in typeSpecs) {
+          if (has(typeSpecs, typeSpecName)) {
+            var error;
+            try {
+              if (typeof typeSpecs[typeSpecName] !== "function") {
+                var err = Error(
+                  (componentName || "React class") + ": " + location + " type `" + typeSpecName + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof typeSpecs[typeSpecName] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`."
+                );
+                err.name = "Invariant Violation";
+                throw err;
+              }
+              error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+            } catch (ex) {
+              error = ex;
+            }
+            if (error && !(error instanceof Error)) {
+              printWarning(
+                (componentName || "React class") + ": type specification of " + location + " `" + typeSpecName + "` is invalid; the type checker function must return `null` or an `Error` but returned a " + typeof error + ". You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument)."
+              );
+            }
+            if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+              loggedTypeFailures[error.message] = true;
+              var stack = getStack ? getStack() : "";
+              printWarning(
+                "Failed " + location + " type: " + error.message + (stack != null ? stack : "")
+              );
+            }
+          }
+        }
+      }
+    }
+    checkPropTypes.resetWarningCache = function() {
+      if (process.env.NODE_ENV !== "production") {
+        loggedTypeFailures = {};
+      }
+    };
+    module2.exports = checkPropTypes;
+  }
+});
+
+// ../../node_modules/prop-types/factoryWithTypeCheckers.js
+var require_factoryWithTypeCheckers = __commonJS({
+  "../../node_modules/prop-types/factoryWithTypeCheckers.js"(exports, module2) {
+    "use strict";
+    init_react_import();
+    var ReactIs = require_react_is();
+    var assign = require_object_assign();
+    var ReactPropTypesSecret = require_ReactPropTypesSecret();
+    var has = require_has();
+    var checkPropTypes = require_checkPropTypes();
+    var printWarning = function() {
+    };
+    if (process.env.NODE_ENV !== "production") {
+      printWarning = function(text) {
+        var message = "Warning: " + text;
+        if (typeof console !== "undefined") {
+          console.error(message);
+        }
+        try {
+          throw new Error(message);
+        } catch (x) {
+        }
+      };
+    }
+    function emptyFunctionThatReturnsNull() {
+      return null;
+    }
+    module2.exports = function(isValidElement, throwOnDirectAccess) {
+      var ITERATOR_SYMBOL = typeof Symbol === "function" && Symbol.iterator;
+      var FAUX_ITERATOR_SYMBOL = "@@iterator";
+      function getIteratorFn(maybeIterable) {
+        var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+        if (typeof iteratorFn === "function") {
+          return iteratorFn;
+        }
+      }
+      var ANONYMOUS = "<<anonymous>>";
+      var ReactPropTypes = {
+        array: createPrimitiveTypeChecker("array"),
+        bigint: createPrimitiveTypeChecker("bigint"),
+        bool: createPrimitiveTypeChecker("boolean"),
+        func: createPrimitiveTypeChecker("function"),
+        number: createPrimitiveTypeChecker("number"),
+        object: createPrimitiveTypeChecker("object"),
+        string: createPrimitiveTypeChecker("string"),
+        symbol: createPrimitiveTypeChecker("symbol"),
+        any: createAnyTypeChecker(),
+        arrayOf: createArrayOfTypeChecker,
+        element: createElementTypeChecker(),
+        elementType: createElementTypeTypeChecker(),
+        instanceOf: createInstanceTypeChecker,
+        node: createNodeChecker(),
+        objectOf: createObjectOfTypeChecker,
+        oneOf: createEnumTypeChecker,
+        oneOfType: createUnionTypeChecker,
+        shape: createShapeTypeChecker,
+        exact: createStrictShapeTypeChecker
+      };
+      function is(x, y) {
+        if (x === y) {
+          return x !== 0 || 1 / x === 1 / y;
+        } else {
+          return x !== x && y !== y;
+        }
+      }
+      function PropTypeError(message, data) {
+        this.message = message;
+        this.data = data && typeof data === "object" ? data : {};
+        this.stack = "";
+      }
+      PropTypeError.prototype = Error.prototype;
+      function createChainableTypeChecker(validate) {
+        if (process.env.NODE_ENV !== "production") {
+          var manualPropTypeCallCache = {};
+          var manualPropTypeWarningCount = 0;
+        }
+        function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+          componentName = componentName || ANONYMOUS;
+          propFullName = propFullName || propName;
+          if (secret !== ReactPropTypesSecret) {
+            if (throwOnDirectAccess) {
+              var err = new Error(
+                "Calling PropTypes validators directly is not supported by the `prop-types` package. Use `PropTypes.checkPropTypes()` to call them. Read more at http://fb.me/use-check-prop-types"
+              );
+              err.name = "Invariant Violation";
+              throw err;
+            } else if (process.env.NODE_ENV !== "production" && typeof console !== "undefined") {
+              var cacheKey = componentName + ":" + propName;
+              if (!manualPropTypeCallCache[cacheKey] && // Avoid spamming the console because they are often not actionable except for lib authors
+              manualPropTypeWarningCount < 3) {
+                printWarning(
+                  "You are manually calling a React.PropTypes validation function for the `" + propFullName + "` prop on `" + componentName + "`. This is deprecated and will throw in the standalone `prop-types` package. You may be seeing this warning due to a third-party PropTypes library. See https://fb.me/react-warning-dont-call-proptypes for details."
+                );
+                manualPropTypeCallCache[cacheKey] = true;
+                manualPropTypeWarningCount++;
+              }
+            }
+          }
+          if (props[propName] == null) {
+            if (isRequired) {
+              if (props[propName] === null) {
+                return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required " + ("in `" + componentName + "`, but its value is `null`."));
+              }
+              return new PropTypeError("The " + location + " `" + propFullName + "` is marked as required in " + ("`" + componentName + "`, but its value is `undefined`."));
+            }
+            return null;
+          } else {
+            return validate(props, propName, componentName, location, propFullName);
+          }
+        }
+        var chainedCheckType = checkType.bind(null, false);
+        chainedCheckType.isRequired = checkType.bind(null, true);
+        return chainedCheckType;
+      }
+      function createPrimitiveTypeChecker(expectedType) {
+        function validate(props, propName, componentName, location, propFullName, secret) {
+          var propValue = props[propName];
+          var propType = getPropType(propValue);
+          if (propType !== expectedType) {
+            var preciseType = getPreciseType(propValue);
+            return new PropTypeError(
+              "Invalid " + location + " `" + propFullName + "` of type " + ("`" + preciseType + "` supplied to `" + componentName + "`, expected ") + ("`" + expectedType + "`."),
+              { expectedType }
+            );
+          }
+          return null;
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function createAnyTypeChecker() {
+        return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+      }
+      function createArrayOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+          if (typeof typeChecker !== "function") {
+            return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside arrayOf.");
+          }
+          var propValue = props[propName];
+          if (!Array.isArray(propValue)) {
+            var propType = getPropType(propValue);
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an array."));
+          }
+          for (var i = 0; i < propValue.length; i++) {
+            var error = typeChecker(propValue, i, componentName, location, propFullName + "[" + i + "]", ReactPropTypesSecret);
+            if (error instanceof Error) {
+              return error;
+            }
+          }
+          return null;
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function createElementTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+          var propValue = props[propName];
+          if (!isValidElement(propValue)) {
+            var propType = getPropType(propValue);
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement."));
+          }
+          return null;
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function createElementTypeTypeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+          var propValue = props[propName];
+          if (!ReactIs.isValidElementType(propValue)) {
+            var propType = getPropType(propValue);
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected a single ReactElement type."));
+          }
+          return null;
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function createInstanceTypeChecker(expectedClass) {
+        function validate(props, propName, componentName, location, propFullName) {
+          if (!(props[propName] instanceof expectedClass)) {
+            var expectedClassName = expectedClass.name || ANONYMOUS;
+            var actualClassName = getClassName11(props[propName]);
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + actualClassName + "` supplied to `" + componentName + "`, expected ") + ("instance of `" + expectedClassName + "`."));
+          }
+          return null;
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function createEnumTypeChecker(expectedValues) {
+        if (!Array.isArray(expectedValues)) {
+          if (process.env.NODE_ENV !== "production") {
+            if (arguments.length > 1) {
+              printWarning(
+                "Invalid arguments supplied to oneOf, expected an array, got " + arguments.length + " arguments. A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z])."
+              );
+            } else {
+              printWarning("Invalid argument supplied to oneOf, expected an array.");
+            }
+          }
+          return emptyFunctionThatReturnsNull;
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+          var propValue = props[propName];
+          for (var i = 0; i < expectedValues.length; i++) {
+            if (is(propValue, expectedValues[i])) {
+              return null;
+            }
+          }
+          var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
+            var type = getPreciseType(value);
+            if (type === "symbol") {
+              return String(value);
+            }
+            return value;
+          });
+          return new PropTypeError("Invalid " + location + " `" + propFullName + "` of value `" + String(propValue) + "` " + ("supplied to `" + componentName + "`, expected one of " + valuesString + "."));
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function createObjectOfTypeChecker(typeChecker) {
+        function validate(props, propName, componentName, location, propFullName) {
+          if (typeof typeChecker !== "function") {
+            return new PropTypeError("Property `" + propFullName + "` of component `" + componentName + "` has invalid PropType notation inside objectOf.");
+          }
+          var propValue = props[propName];
+          var propType = getPropType(propValue);
+          if (propType !== "object") {
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type " + ("`" + propType + "` supplied to `" + componentName + "`, expected an object."));
+          }
+          for (var key in propValue) {
+            if (has(propValue, key)) {
+              var error = typeChecker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+              if (error instanceof Error) {
+                return error;
+              }
+            }
+          }
+          return null;
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function createUnionTypeChecker(arrayOfTypeCheckers) {
+        if (!Array.isArray(arrayOfTypeCheckers)) {
+          process.env.NODE_ENV !== "production" ? printWarning("Invalid argument supplied to oneOfType, expected an instance of array.") : void 0;
+          return emptyFunctionThatReturnsNull;
+        }
+        for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+          var checker = arrayOfTypeCheckers[i];
+          if (typeof checker !== "function") {
+            printWarning(
+              "Invalid argument supplied to oneOfType. Expected an array of check functions, but received " + getPostfixForTypeWarning(checker) + " at index " + i + "."
+            );
+            return emptyFunctionThatReturnsNull;
+          }
+        }
+        function validate(props, propName, componentName, location, propFullName) {
+          var expectedTypes = [];
+          for (var i2 = 0; i2 < arrayOfTypeCheckers.length; i2++) {
+            var checker2 = arrayOfTypeCheckers[i2];
+            var checkerResult = checker2(props, propName, componentName, location, propFullName, ReactPropTypesSecret);
+            if (checkerResult == null) {
+              return null;
+            }
+            if (checkerResult.data && has(checkerResult.data, "expectedType")) {
+              expectedTypes.push(checkerResult.data.expectedType);
+            }
+          }
+          var expectedTypesMessage = expectedTypes.length > 0 ? ", expected one of type [" + expectedTypes.join(", ") + "]" : "";
+          return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`" + expectedTypesMessage + "."));
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function createNodeChecker() {
+        function validate(props, propName, componentName, location, propFullName) {
+          if (!isNode(props[propName])) {
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` supplied to " + ("`" + componentName + "`, expected a ReactNode."));
+          }
+          return null;
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function invalidValidatorError(componentName, location, propFullName, key, type) {
+        return new PropTypeError(
+          (componentName || "React class") + ": " + location + " type `" + propFullName + "." + key + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + type + "`."
+        );
+      }
+      function createShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+          var propValue = props[propName];
+          var propType = getPropType(propValue);
+          if (propType !== "object") {
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+          }
+          for (var key in shapeTypes) {
+            var checker = shapeTypes[key];
+            if (typeof checker !== "function") {
+              return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+            }
+            var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+            if (error) {
+              return error;
+            }
+          }
+          return null;
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function createStrictShapeTypeChecker(shapeTypes) {
+        function validate(props, propName, componentName, location, propFullName) {
+          var propValue = props[propName];
+          var propType = getPropType(propValue);
+          if (propType !== "object") {
+            return new PropTypeError("Invalid " + location + " `" + propFullName + "` of type `" + propType + "` " + ("supplied to `" + componentName + "`, expected `object`."));
+          }
+          var allKeys = assign({}, props[propName], shapeTypes);
+          for (var key in allKeys) {
+            var checker = shapeTypes[key];
+            if (has(shapeTypes, key) && typeof checker !== "function") {
+              return invalidValidatorError(componentName, location, propFullName, key, getPreciseType(checker));
+            }
+            if (!checker) {
+              return new PropTypeError(
+                "Invalid " + location + " `" + propFullName + "` key `" + key + "` supplied to `" + componentName + "`.\nBad object: " + JSON.stringify(props[propName], null, "  ") + "\nValid keys: " + JSON.stringify(Object.keys(shapeTypes), null, "  ")
+              );
+            }
+            var error = checker(propValue, key, componentName, location, propFullName + "." + key, ReactPropTypesSecret);
+            if (error) {
+              return error;
+            }
+          }
+          return null;
+        }
+        return createChainableTypeChecker(validate);
+      }
+      function isNode(propValue) {
+        switch (typeof propValue) {
+          case "number":
+          case "string":
+          case "undefined":
+            return true;
+          case "boolean":
+            return !propValue;
+          case "object":
+            if (Array.isArray(propValue)) {
+              return propValue.every(isNode);
+            }
+            if (propValue === null || isValidElement(propValue)) {
+              return true;
+            }
+            var iteratorFn = getIteratorFn(propValue);
+            if (iteratorFn) {
+              var iterator = iteratorFn.call(propValue);
+              var step;
+              if (iteratorFn !== propValue.entries) {
+                while (!(step = iterator.next()).done) {
+                  if (!isNode(step.value)) {
+                    return false;
+                  }
+                }
+              } else {
+                while (!(step = iterator.next()).done) {
+                  var entry = step.value;
+                  if (entry) {
+                    if (!isNode(entry[1])) {
+                      return false;
+                    }
+                  }
+                }
+              }
+            } else {
+              return false;
+            }
+            return true;
+          default:
+            return false;
+        }
+      }
+      function isSymbol(propType, propValue) {
+        if (propType === "symbol") {
+          return true;
+        }
+        if (!propValue) {
+          return false;
+        }
+        if (propValue["@@toStringTag"] === "Symbol") {
+          return true;
+        }
+        if (typeof Symbol === "function" && propValue instanceof Symbol) {
+          return true;
+        }
+        return false;
+      }
+      function getPropType(propValue) {
+        var propType = typeof propValue;
+        if (Array.isArray(propValue)) {
+          return "array";
+        }
+        if (propValue instanceof RegExp) {
+          return "object";
+        }
+        if (isSymbol(propType, propValue)) {
+          return "symbol";
+        }
+        return propType;
+      }
+      function getPreciseType(propValue) {
+        if (typeof propValue === "undefined" || propValue === null) {
+          return "" + propValue;
+        }
+        var propType = getPropType(propValue);
+        if (propType === "object") {
+          if (propValue instanceof Date) {
+            return "date";
+          } else if (propValue instanceof RegExp) {
+            return "regexp";
+          }
+        }
+        return propType;
+      }
+      function getPostfixForTypeWarning(value) {
+        var type = getPreciseType(value);
+        switch (type) {
+          case "array":
+          case "object":
+            return "an " + type;
+          case "boolean":
+          case "date":
+          case "regexp":
+            return "a " + type;
+          default:
+            return type;
+        }
+      }
+      function getClassName11(propValue) {
+        if (!propValue.constructor || !propValue.constructor.name) {
+          return ANONYMOUS;
+        }
+        return propValue.constructor.name;
+      }
+      ReactPropTypes.checkPropTypes = checkPropTypes;
+      ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
+      ReactPropTypes.PropTypes = ReactPropTypes;
+      return ReactPropTypes;
+    };
+  }
+});
+
+// ../../node_modules/prop-types/factoryWithThrowingShims.js
+var require_factoryWithThrowingShims = __commonJS({
+  "../../node_modules/prop-types/factoryWithThrowingShims.js"(exports, module2) {
+    "use strict";
+    init_react_import();
+    var ReactPropTypesSecret = require_ReactPropTypesSecret();
+    function emptyFunction() {
+    }
+    function emptyFunctionWithReset() {
+    }
+    emptyFunctionWithReset.resetWarningCache = emptyFunction;
+    module2.exports = function() {
+      function shim(props, propName, componentName, location, propFullName, secret) {
+        if (secret === ReactPropTypesSecret) {
+          return;
+        }
+        var err = new Error(
+          "Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types"
+        );
+        err.name = "Invariant Violation";
+        throw err;
+      }
+      ;
+      shim.isRequired = shim;
+      function getShim() {
+        return shim;
+      }
+      ;
+      var ReactPropTypes = {
+        array: shim,
+        bigint: shim,
+        bool: shim,
+        func: shim,
+        number: shim,
+        object: shim,
+        string: shim,
+        symbol: shim,
+        any: shim,
+        arrayOf: getShim,
+        element: shim,
+        elementType: shim,
+        instanceOf: getShim,
+        node: shim,
+        objectOf: getShim,
+        oneOf: getShim,
+        oneOfType: getShim,
+        shape: getShim,
+        exact: getShim,
+        checkPropTypes: emptyFunctionWithReset,
+        resetWarningCache: emptyFunction
+      };
+      ReactPropTypes.PropTypes = ReactPropTypes;
+      return ReactPropTypes;
+    };
+  }
+});
+
+// ../../node_modules/prop-types/index.js
+var require_prop_types = __commonJS({
+  "../../node_modules/prop-types/index.js"(exports, module2) {
+    "use strict";
+    init_react_import();
+    if (process.env.NODE_ENV !== "production") {
+      ReactIs = require_react_is();
+      throwOnDirectAccess = true;
+      module2.exports = require_factoryWithTypeCheckers()(ReactIs.isElement, throwOnDirectAccess);
+    } else {
+      module2.exports = require_factoryWithThrowingShims()();
+    }
+    var ReactIs;
+    var throwOnDirectAccess;
+  }
+});
+
 // index.ts
-var core_exports = {};
-__export(core_exports, {
+var puck_exports = {};
+__export(puck_exports, {
   Button: () => Button,
   DropZone: () => DropZone,
   DropZoneProvider: () => DropZoneProvider,
@@ -155,7 +1114,7 @@ __export(core_exports, {
   Render: () => Render,
   dropZoneContext: () => dropZoneContext
 });
-module.exports = __toCommonJS(core_exports);
+module.exports = __toCommonJS(puck_exports);
 init_react_import();
 
 // types/Config.tsx
@@ -168,7 +1127,7 @@ init_react_import();
 init_react_import();
 var import_react2 = require("react");
 
-// css-module:/home/sullija/dev/javascript/puck/packages/core/components/Button/Button.module.css#css-module
+// css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/Button/Button.module.css#css-module
 init_react_import();
 var Button_module_default = { "Button": "_Button_1muck_1", "Button--medium": "_Button--medium_1muck_20", "Button--large": "_Button--large_1muck_27", "Button-icon": "_Button-icon_1muck_34", "Button--primary": "_Button--primary_1muck_42", "Button--secondary": "_Button--secondary_1muck_51", "Button--flush": "_Button--flush_1muck_62", "Button--disabled": "_Button--disabled_1muck_66", "Button--fullWidth": "_Button--fullWidth_1muck_76" };
 
@@ -258,26 +1217,1172 @@ var Button = ({
 
 // components/DropZone/index.tsx
 init_react_import();
-var import_react7 = require("react");
+var import_react21 = require("react");
 
 // components/DraggableComponent/index.tsx
 init_react_import();
-var import_react4 = require("react");
+var import_react18 = require("react");
 var import_react_beautiful_dnd = require("react-beautiful-dnd");
 
-// css-module:/home/sullija/dev/javascript/puck/packages/core/components/DraggableComponent/styles.module.css#css-module
+// css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/DraggableComponent/styles.module.css#css-module
 init_react_import();
 var styles_module_default = { "DraggableComponent": "_DraggableComponent_1nlo8_1", "DraggableComponent--isDragging": "_DraggableComponent--isDragging_1nlo8_6", "DraggableComponent-contents": "_DraggableComponent-contents_1nlo8_12", "DraggableComponent-overlay": "_DraggableComponent-overlay_1nlo8_24", "DraggableComponent--isLocked": "_DraggableComponent--isLocked_1nlo8_39", "DraggableComponent--forceHover": "_DraggableComponent--forceHover_1nlo8_45", "DraggableComponent--indicativeHover": "_DraggableComponent--indicativeHover_1nlo8_50", "DraggableComponent--isSelected": "_DraggableComponent--isSelected_1nlo8_57", "DraggableComponent-actions": "_DraggableComponent-actions_1nlo8_70", "DraggableComponent-actionsLabel": "_DraggableComponent-actionsLabel_1nlo8_93", "DraggableComponent-action": "_DraggableComponent-action_1nlo8_70" };
 
-// components/DraggableComponent/index.tsx
-var import_react_feather = require("react-feather");
+// ../../node_modules/react-feather/dist/index.js
+init_react_import();
+
+// ../../node_modules/react-feather/dist/icons/check-circle.js
+init_react_import();
+var import_react3 = __toESM(require("react"));
+var import_prop_types = __toESM(require_prop_types());
+function _extends() {
+  _extends = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends.apply(this, arguments);
+}
+function _objectWithoutProperties(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var CheckCircle = (0, import_react3.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react3.default.createElement("svg", _extends({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react3.default.createElement("path", {
+    d: "M22 11.08V12a10 10 0 1 1-5.93-9.14"
+  }), /* @__PURE__ */ import_react3.default.createElement("polyline", {
+    points: "22 4 12 14.01 9 11.01"
+  }));
+});
+CheckCircle.propTypes = {
+  color: import_prop_types.default.string,
+  size: import_prop_types.default.oneOfType([import_prop_types.default.string, import_prop_types.default.number])
+};
+CheckCircle.displayName = "CheckCircle";
+var check_circle_default = CheckCircle;
+
+// ../../node_modules/react-feather/dist/icons/chevron-down.js
+init_react_import();
+var import_react4 = __toESM(require("react"));
+var import_prop_types2 = __toESM(require_prop_types());
+function _extends2() {
+  _extends2 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends2.apply(this, arguments);
+}
+function _objectWithoutProperties2(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose2(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose2(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var ChevronDown = (0, import_react4.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties2(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react4.default.createElement("svg", _extends2({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react4.default.createElement("polyline", {
+    points: "6 9 12 15 18 9"
+  }));
+});
+ChevronDown.propTypes = {
+  color: import_prop_types2.default.string,
+  size: import_prop_types2.default.oneOfType([import_prop_types2.default.string, import_prop_types2.default.number])
+};
+ChevronDown.displayName = "ChevronDown";
+var chevron_down_default = ChevronDown;
+
+// ../../node_modules/react-feather/dist/icons/chevron-left.js
+init_react_import();
+var import_react5 = __toESM(require("react"));
+var import_prop_types3 = __toESM(require_prop_types());
+function _extends3() {
+  _extends3 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends3.apply(this, arguments);
+}
+function _objectWithoutProperties3(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose3(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose3(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var ChevronLeft = (0, import_react5.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties3(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react5.default.createElement("svg", _extends3({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react5.default.createElement("polyline", {
+    points: "15 18 9 12 15 6"
+  }));
+});
+ChevronLeft.propTypes = {
+  color: import_prop_types3.default.string,
+  size: import_prop_types3.default.oneOfType([import_prop_types3.default.string, import_prop_types3.default.number])
+};
+ChevronLeft.displayName = "ChevronLeft";
+var chevron_left_default = ChevronLeft;
+
+// ../../node_modules/react-feather/dist/icons/chevron-right.js
+init_react_import();
+var import_react6 = __toESM(require("react"));
+var import_prop_types4 = __toESM(require_prop_types());
+function _extends4() {
+  _extends4 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends4.apply(this, arguments);
+}
+function _objectWithoutProperties4(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose4(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose4(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var ChevronRight = (0, import_react6.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties4(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react6.default.createElement("svg", _extends4({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react6.default.createElement("polyline", {
+    points: "9 18 15 12 9 6"
+  }));
+});
+ChevronRight.propTypes = {
+  color: import_prop_types4.default.string,
+  size: import_prop_types4.default.oneOfType([import_prop_types4.default.string, import_prop_types4.default.number])
+};
+ChevronRight.displayName = "ChevronRight";
+var chevron_right_default = ChevronRight;
+
+// ../../node_modules/react-feather/dist/icons/copy.js
+init_react_import();
+var import_react7 = __toESM(require("react"));
+var import_prop_types5 = __toESM(require_prop_types());
+function _extends5() {
+  _extends5 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends5.apply(this, arguments);
+}
+function _objectWithoutProperties5(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose5(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose5(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var Copy = (0, import_react7.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties5(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react7.default.createElement("svg", _extends5({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react7.default.createElement("rect", {
+    x: "9",
+    y: "9",
+    width: "13",
+    height: "13",
+    rx: "2",
+    ry: "2"
+  }), /* @__PURE__ */ import_react7.default.createElement("path", {
+    d: "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+  }));
+});
+Copy.propTypes = {
+  color: import_prop_types5.default.string,
+  size: import_prop_types5.default.oneOfType([import_prop_types5.default.string, import_prop_types5.default.number])
+};
+Copy.displayName = "Copy";
+var copy_default = Copy;
+
+// ../../node_modules/react-feather/dist/icons/globe.js
+init_react_import();
+var import_react8 = __toESM(require("react"));
+var import_prop_types6 = __toESM(require_prop_types());
+function _extends6() {
+  _extends6 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends6.apply(this, arguments);
+}
+function _objectWithoutProperties6(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose6(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose6(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var Globe = (0, import_react8.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties6(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react8.default.createElement("svg", _extends6({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react8.default.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "10"
+  }), /* @__PURE__ */ import_react8.default.createElement("line", {
+    x1: "2",
+    y1: "12",
+    x2: "22",
+    y2: "12"
+  }), /* @__PURE__ */ import_react8.default.createElement("path", {
+    d: "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+  }));
+});
+Globe.propTypes = {
+  color: import_prop_types6.default.string,
+  size: import_prop_types6.default.oneOfType([import_prop_types6.default.string, import_prop_types6.default.number])
+};
+Globe.displayName = "Globe";
+var globe_default = Globe;
+
+// ../../node_modules/react-feather/dist/icons/grid.js
+init_react_import();
+var import_react9 = __toESM(require("react"));
+var import_prop_types7 = __toESM(require_prop_types());
+function _extends7() {
+  _extends7 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends7.apply(this, arguments);
+}
+function _objectWithoutProperties7(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose7(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose7(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var Grid = (0, import_react9.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties7(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react9.default.createElement("svg", _extends7({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react9.default.createElement("rect", {
+    x: "3",
+    y: "3",
+    width: "7",
+    height: "7"
+  }), /* @__PURE__ */ import_react9.default.createElement("rect", {
+    x: "14",
+    y: "3",
+    width: "7",
+    height: "7"
+  }), /* @__PURE__ */ import_react9.default.createElement("rect", {
+    x: "14",
+    y: "14",
+    width: "7",
+    height: "7"
+  }), /* @__PURE__ */ import_react9.default.createElement("rect", {
+    x: "3",
+    y: "14",
+    width: "7",
+    height: "7"
+  }));
+});
+Grid.propTypes = {
+  color: import_prop_types7.default.string,
+  size: import_prop_types7.default.oneOfType([import_prop_types7.default.string, import_prop_types7.default.number])
+};
+Grid.displayName = "Grid";
+var grid_default = Grid;
+
+// ../../node_modules/react-feather/dist/icons/hash.js
+init_react_import();
+var import_react10 = __toESM(require("react"));
+var import_prop_types8 = __toESM(require_prop_types());
+function _extends8() {
+  _extends8 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends8.apply(this, arguments);
+}
+function _objectWithoutProperties8(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose8(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose8(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var Hash = (0, import_react10.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties8(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react10.default.createElement("svg", _extends8({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react10.default.createElement("line", {
+    x1: "4",
+    y1: "9",
+    x2: "20",
+    y2: "9"
+  }), /* @__PURE__ */ import_react10.default.createElement("line", {
+    x1: "4",
+    y1: "15",
+    x2: "20",
+    y2: "15"
+  }), /* @__PURE__ */ import_react10.default.createElement("line", {
+    x1: "10",
+    y1: "3",
+    x2: "8",
+    y2: "21"
+  }), /* @__PURE__ */ import_react10.default.createElement("line", {
+    x1: "16",
+    y1: "3",
+    x2: "14",
+    y2: "21"
+  }));
+});
+Hash.propTypes = {
+  color: import_prop_types8.default.string,
+  size: import_prop_types8.default.oneOfType([import_prop_types8.default.string, import_prop_types8.default.number])
+};
+Hash.displayName = "Hash";
+var hash_default = Hash;
+
+// ../../node_modules/react-feather/dist/icons/layers.js
+init_react_import();
+var import_react11 = __toESM(require("react"));
+var import_prop_types9 = __toESM(require_prop_types());
+function _extends9() {
+  _extends9 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends9.apply(this, arguments);
+}
+function _objectWithoutProperties9(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose9(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose9(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var Layers = (0, import_react11.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties9(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react11.default.createElement("svg", _extends9({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react11.default.createElement("polygon", {
+    points: "12 2 2 7 12 12 22 7 12 2"
+  }), /* @__PURE__ */ import_react11.default.createElement("polyline", {
+    points: "2 17 12 22 22 17"
+  }), /* @__PURE__ */ import_react11.default.createElement("polyline", {
+    points: "2 12 12 17 22 12"
+  }));
+});
+Layers.propTypes = {
+  color: import_prop_types9.default.string,
+  size: import_prop_types9.default.oneOfType([import_prop_types9.default.string, import_prop_types9.default.number])
+};
+Layers.displayName = "Layers";
+var layers_default = Layers;
+
+// ../../node_modules/react-feather/dist/icons/link.js
+init_react_import();
+var import_react12 = __toESM(require("react"));
+var import_prop_types10 = __toESM(require_prop_types());
+function _extends10() {
+  _extends10 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends10.apply(this, arguments);
+}
+function _objectWithoutProperties10(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose10(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose10(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var Link = (0, import_react12.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties10(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react12.default.createElement("svg", _extends10({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react12.default.createElement("path", {
+    d: "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+  }), /* @__PURE__ */ import_react12.default.createElement("path", {
+    d: "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+  }));
+});
+Link.propTypes = {
+  color: import_prop_types10.default.string,
+  size: import_prop_types10.default.oneOfType([import_prop_types10.default.string, import_prop_types10.default.number])
+};
+Link.displayName = "Link";
+var link_default = Link;
+
+// ../../node_modules/react-feather/dist/icons/list.js
+init_react_import();
+var import_react13 = __toESM(require("react"));
+var import_prop_types11 = __toESM(require_prop_types());
+function _extends11() {
+  _extends11 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends11.apply(this, arguments);
+}
+function _objectWithoutProperties11(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose11(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose11(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var List = (0, import_react13.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties11(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react13.default.createElement("svg", _extends11({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react13.default.createElement("line", {
+    x1: "8",
+    y1: "6",
+    x2: "21",
+    y2: "6"
+  }), /* @__PURE__ */ import_react13.default.createElement("line", {
+    x1: "8",
+    y1: "12",
+    x2: "21",
+    y2: "12"
+  }), /* @__PURE__ */ import_react13.default.createElement("line", {
+    x1: "8",
+    y1: "18",
+    x2: "21",
+    y2: "18"
+  }), /* @__PURE__ */ import_react13.default.createElement("line", {
+    x1: "3",
+    y1: "6",
+    x2: "3.01",
+    y2: "6"
+  }), /* @__PURE__ */ import_react13.default.createElement("line", {
+    x1: "3",
+    y1: "12",
+    x2: "3.01",
+    y2: "12"
+  }), /* @__PURE__ */ import_react13.default.createElement("line", {
+    x1: "3",
+    y1: "18",
+    x2: "3.01",
+    y2: "18"
+  }));
+});
+List.propTypes = {
+  color: import_prop_types11.default.string,
+  size: import_prop_types11.default.oneOfType([import_prop_types11.default.string, import_prop_types11.default.number])
+};
+List.displayName = "List";
+var list_default = List;
+
+// ../../node_modules/react-feather/dist/icons/sidebar.js
+init_react_import();
+var import_react14 = __toESM(require("react"));
+var import_prop_types12 = __toESM(require_prop_types());
+function _extends12() {
+  _extends12 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends12.apply(this, arguments);
+}
+function _objectWithoutProperties12(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose12(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose12(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var Sidebar = (0, import_react14.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties12(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react14.default.createElement("svg", _extends12({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react14.default.createElement("rect", {
+    x: "3",
+    y: "3",
+    width: "18",
+    height: "18",
+    rx: "2",
+    ry: "2"
+  }), /* @__PURE__ */ import_react14.default.createElement("line", {
+    x1: "9",
+    y1: "3",
+    x2: "9",
+    y2: "21"
+  }));
+});
+Sidebar.propTypes = {
+  color: import_prop_types12.default.string,
+  size: import_prop_types12.default.oneOfType([import_prop_types12.default.string, import_prop_types12.default.number])
+};
+Sidebar.displayName = "Sidebar";
+var sidebar_default = Sidebar;
+
+// ../../node_modules/react-feather/dist/icons/trash.js
+init_react_import();
+var import_react15 = __toESM(require("react"));
+var import_prop_types13 = __toESM(require_prop_types());
+function _extends13() {
+  _extends13 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends13.apply(this, arguments);
+}
+function _objectWithoutProperties13(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose13(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose13(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var Trash = (0, import_react15.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties13(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react15.default.createElement("svg", _extends13({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react15.default.createElement("polyline", {
+    points: "3 6 5 6 21 6"
+  }), /* @__PURE__ */ import_react15.default.createElement("path", {
+    d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+  }));
+});
+Trash.propTypes = {
+  color: import_prop_types13.default.string,
+  size: import_prop_types13.default.oneOfType([import_prop_types13.default.string, import_prop_types13.default.number])
+};
+Trash.displayName = "Trash";
+var trash_default = Trash;
+
+// ../../node_modules/react-feather/dist/icons/type.js
+init_react_import();
+var import_react16 = __toESM(require("react"));
+var import_prop_types14 = __toESM(require_prop_types());
+function _extends14() {
+  _extends14 = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  return _extends14.apply(this, arguments);
+}
+function _objectWithoutProperties14(source, excluded) {
+  if (source == null)
+    return {};
+  var target = _objectWithoutPropertiesLoose14(source, excluded);
+  var key, i;
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0)
+        continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key))
+        continue;
+      target[key] = source[key];
+    }
+  }
+  return target;
+}
+function _objectWithoutPropertiesLoose14(source, excluded) {
+  if (source == null)
+    return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0)
+      continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+var Type = (0, import_react16.forwardRef)(function(_ref, ref) {
+  var _ref$color = _ref.color, color = _ref$color === void 0 ? "currentColor" : _ref$color, _ref$size = _ref.size, size = _ref$size === void 0 ? 24 : _ref$size, rest = _objectWithoutProperties14(_ref, ["color", "size"]);
+  return /* @__PURE__ */ import_react16.default.createElement("svg", _extends14({
+    ref,
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }, rest), /* @__PURE__ */ import_react16.default.createElement("polyline", {
+    points: "4 7 4 4 20 4 20 7"
+  }), /* @__PURE__ */ import_react16.default.createElement("line", {
+    x1: "9",
+    y1: "20",
+    x2: "15",
+    y2: "20"
+  }), /* @__PURE__ */ import_react16.default.createElement("line", {
+    x1: "12",
+    y1: "4",
+    x2: "12",
+    y2: "20"
+  }));
+});
+Type.propTypes = {
+  color: import_prop_types14.default.string,
+  size: import_prop_types14.default.oneOfType([import_prop_types14.default.string, import_prop_types14.default.number])
+};
+Type.displayName = "Type";
+var type_default = Type;
 
 // lib/use-modifier-held.ts
 init_react_import();
-var import_react3 = require("react");
+var import_react17 = require("react");
 var useModifierHeld = (modifier) => {
-  const [modifierHeld, setModifierHeld] = (0, import_react3.useState)(false);
-  (0, import_react3.useEffect)(() => {
+  const [modifierHeld, setModifierHeld] = (0, import_react17.useState)(false);
+  (0, import_react17.useEffect)(() => {
     function downHandler({ key }) {
       if (key === modifier) {
         setModifierHeld(true);
@@ -321,7 +2426,7 @@ var DraggableComponent = ({
   style
 }) => {
   const isModifierHeld = useModifierHeld("Alt");
-  (0, import_react4.useEffect)(onMount, []);
+  (0, import_react18.useEffect)(onMount, []);
   return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
     import_react_beautiful_dnd.Draggable,
     {
@@ -352,8 +2457,8 @@ var DraggableComponent = ({
             /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: getClassName2("contents"), children }),
             /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: getClassName2("overlay"), children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("div", { className: getClassName2("actions"), children: [
               label && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: getClassName2("actionsLabel"), children: label }),
-              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", { className: getClassName2("action"), onClick: onDuplicate, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react_feather.Copy, { size: 16 }) }),
-              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", { className: getClassName2("action"), onClick: onDelete, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(import_react_feather.Trash, { size: 16 }) })
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", { className: getClassName2("action"), onClick: onDuplicate, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(copy_default, { size: 16 }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("button", { className: getClassName2("action"), onClick: onDelete, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(trash_default, { size: 16 }) })
             ] }) })
           ]
         })
@@ -365,13 +2470,13 @@ var DraggableComponent = ({
 
 // components/DroppableStrictMode/index.tsx
 init_react_import();
-var import_react5 = require("react");
+var import_react19 = require("react");
 var import_react_beautiful_dnd2 = require("react-beautiful-dnd");
 var import_jsx_runtime3 = require("react/jsx-runtime");
 var DroppableStrictMode = (_a) => {
   var _b = _a, { children } = _b, props = __objRest(_b, ["children"]);
-  const [enabled, setEnabled] = (0, import_react5.useState)(false);
-  (0, import_react5.useEffect)(() => {
+  const [enabled, setEnabled] = (0, import_react19.useState)(false);
+  (0, import_react19.useEffect)(() => {
     const animation = requestAnimationFrame(() => setEnabled(true));
     return () => {
       cancelAnimationFrame(animation);
@@ -444,13 +2549,13 @@ var replace = (list, index, newItem) => {
   return result;
 };
 
-// css-module:/home/sullija/dev/javascript/puck/packages/core/components/DropZone/styles.module.css#css-module
+// css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/DropZone/styles.module.css#css-module
 init_react_import();
 var styles_module_default2 = { "DropZone": "_DropZone_1980k_1", "DropZone-content": "_DropZone-content_1980k_11", "DropZone--userIsDragging": "_DropZone--userIsDragging_1980k_16", "DropZone--draggingOverArea": "_DropZone--draggingOverArea_1980k_20", "DropZone--draggingNewComponent": "_DropZone--draggingNewComponent_1980k_21", "DropZone--isAreaSelected": "_DropZone--isAreaSelected_1980k_27", "DropZone--hoveringOverArea": "_DropZone--hoveringOverArea_1980k_28", "DropZone--isDisabled": "_DropZone--isDisabled_1980k_29", "DropZone--isRootZone": "_DropZone--isRootZone_1980k_30", "DropZone--hasChildren": "_DropZone--hasChildren_1980k_36", "DropZone--isDestination": "_DropZone--isDestination_1980k_41", "DropZone-item": "_DropZone-item_1980k_49", "DropZone-hitbox": "_DropZone-hitbox_1980k_57" };
 
 // components/DropZone/context.tsx
 init_react_import();
-var import_react6 = require("react");
+var import_react20 = require("react");
 var import_use_debounce = require("use-debounce");
 
 // lib/get-zone-id.ts
@@ -467,29 +2572,29 @@ var getZoneId = (zoneCompound) => {
 
 // components/DropZone/context.tsx
 var import_jsx_runtime4 = require("react/jsx-runtime");
-var dropZoneContext = (0, import_react6.createContext)(null);
+var dropZoneContext = (0, import_react20.createContext)(null);
 var DropZoneProvider = ({
   children,
   value
 }) => {
-  const [hoveringArea, setHoveringArea] = (0, import_react6.useState)(null);
-  const [hoveringZone, setHoveringZone] = (0, import_react6.useState)(
+  const [hoveringArea, setHoveringArea] = (0, import_react20.useState)(null);
+  const [hoveringZone, setHoveringZone] = (0, import_react20.useState)(
     rootDroppableId
   );
-  const [hoveringComponent, setHoveringComponent] = (0, import_react6.useState)();
+  const [hoveringComponent, setHoveringComponent] = (0, import_react20.useState)();
   const [hoveringAreaDb] = (0, import_use_debounce.useDebounce)(hoveringArea, 75, { leading: false });
-  const [areasWithZones, setAreasWithZones] = (0, import_react6.useState)(
+  const [areasWithZones, setAreasWithZones] = (0, import_react20.useState)(
     {}
   );
-  const [activeZones, setActiveZones] = (0, import_react6.useState)({});
+  const [activeZones, setActiveZones] = (0, import_react20.useState)({});
   const { dispatch = null } = value ? value : {};
-  const registerZoneArea = (0, import_react6.useCallback)(
+  const registerZoneArea = (0, import_react20.useCallback)(
     (area) => {
       setAreasWithZones((latest) => __spreadProps(__spreadValues({}, latest), { [area]: true }));
     },
     [setAreasWithZones]
   );
-  const registerZone = (0, import_react6.useCallback)(
+  const registerZone = (0, import_react20.useCallback)(
     (zoneCompound) => {
       if (!dispatch) {
         return;
@@ -502,7 +2607,7 @@ var DropZoneProvider = ({
     },
     [setActiveZones, dispatch]
   );
-  const unregisterZone = (0, import_react6.useCallback)(
+  const unregisterZone = (0, import_react20.useCallback)(
     (zoneCompound) => {
       if (!dispatch) {
         return;
@@ -517,8 +2622,8 @@ var DropZoneProvider = ({
     },
     [setActiveZones, dispatch]
   );
-  const [pathData, setPathData] = (0, import_react6.useState)();
-  const registerPath = (0, import_react6.useCallback)(
+  const [pathData, setPathData] = (0, import_react20.useState)();
+  const registerPath = (0, import_react20.useCallback)(
     (selector) => {
       if (!(value == null ? void 0 : value.data)) {
         return;
@@ -571,7 +2676,7 @@ var import_jsx_runtime5 = require("react/jsx-runtime");
 var getClassName3 = get_class_name_factory_default("DropZone", styles_module_default2);
 function DropZoneEdit({ zone, style }) {
   var _a;
-  const ctx = (0, import_react7.useContext)(dropZoneContext);
+  const ctx = (0, import_react21.useContext)(dropZoneContext);
   const {
     // These all need setting via context
     data,
@@ -588,12 +2693,12 @@ function DropZoneEdit({ zone, style }) {
   } = ctx || {};
   let content = data.content || [];
   let zoneCompound = rootDroppableId;
-  (0, import_react7.useEffect)(() => {
+  (0, import_react21.useEffect)(() => {
     if (areaId && registerZoneArea) {
       registerZoneArea(areaId);
     }
   }, [areaId]);
-  (0, import_react7.useEffect)(() => {
+  (0, import_react21.useEffect)(() => {
     if (ctx == null ? void 0 : ctx.registerZone) {
       ctx == null ? void 0 : ctx.registerZone(zoneCompound);
     }
@@ -794,7 +2899,7 @@ function DropZoneEdit({ zone, style }) {
   );
 }
 function DropZoneRender({ zone }) {
-  const ctx = (0, import_react7.useContext)(dropZoneContext);
+  const ctx = (0, import_react21.useContext)(dropZoneContext);
   const { data, areaId = "root", config } = ctx || {};
   let zoneCompound = rootDroppableId;
   let content = (data == null ? void 0 : data.content) || [];
@@ -821,7 +2926,7 @@ function DropZoneRender({ zone }) {
   }) });
 }
 function DropZone(props) {
-  const ctx = (0, import_react7.useContext)(dropZoneContext);
+  const ctx = (0, import_react21.useContext)(dropZoneContext);
   if ((ctx == null ? void 0 : ctx.mode) === "edit") {
     return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(DropZoneEdit, __spreadValues({}, props));
   }
@@ -833,9 +2938,9 @@ init_react_import();
 
 // components/IconButton/IconButton.tsx
 init_react_import();
-var import_react8 = require("react");
+var import_react22 = require("react");
 
-// css-module:/home/sullija/dev/javascript/puck/packages/core/components/IconButton/IconButton.module.css#css-module
+// css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/IconButton/IconButton.module.css#css-module
 init_react_import();
 var IconButton_module_default = { "IconButton": "_IconButton_13gzt_1" };
 
@@ -855,7 +2960,7 @@ var IconButton = ({
   fullWidth,
   title
 }) => {
-  const [loading, setLoading] = (0, import_react8.useState)(false);
+  const [loading, setLoading] = (0, import_react22.useState)(false);
   const ElementType = href ? "a" : "button";
   const el = /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)(
     ElementType,
@@ -895,7 +3000,7 @@ var IconButton = ({
 
 // components/Puck/index.tsx
 init_react_import();
-var import_react12 = require("react");
+var import_react28 = require("react");
 var import_react_beautiful_dnd4 = require("react-beautiful-dnd");
 
 // components/InputOrGroup/index.tsx
@@ -903,14 +3008,13 @@ init_react_import();
 
 // components/ExternalInput/index.tsx
 init_react_import();
-var import_react9 = require("react");
+var import_react23 = require("react");
 
-// css-module:/home/sullija/dev/javascript/puck/packages/core/components/ExternalInput/styles.module.css#css-module
+// css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/ExternalInput/styles.module.css#css-module
 init_react_import();
 var styles_module_default3 = { "ExternalInput": "_ExternalInput_l4bks_1", "ExternalInput-actions": "_ExternalInput-actions_l4bks_5", "ExternalInput-button": "_ExternalInput-button_l4bks_9", "ExternalInput-detachButton": "_ExternalInput-detachButton_l4bks_28", "ExternalInput--hasData": "_ExternalInput--hasData_l4bks_35", "ExternalInput-modal": "_ExternalInput-modal_l4bks_55", "ExternalInput--modalVisible": "_ExternalInput--modalVisible_l4bks_69", "ExternalInput-modalInner": "_ExternalInput-modalInner_l4bks_73", "ExternalInput-modalHeading": "_ExternalInput-modalHeading_l4bks_84", "ExternalInput-modalTableWrapper": "_ExternalInput-modalTableWrapper_l4bks_89" };
 
 // components/ExternalInput/index.tsx
-var import_react_feather2 = require("react-feather");
 var import_jsx_runtime7 = require("react/jsx-runtime");
 var getClassName5 = get_class_name_factory_default("ExternalInput", styles_module_default3);
 var ExternalInput = ({
@@ -918,10 +3022,10 @@ var ExternalInput = ({
   onChange,
   value = null
 }) => {
-  const [data, setData] = (0, import_react9.useState)([]);
-  const [isOpen, setOpen] = (0, import_react9.useState)(false);
-  const [selectedData, setSelectedData] = (0, import_react9.useState)(value);
-  (0, import_react9.useEffect)(() => {
+  const [data, setData] = (0, import_react23.useState)([]);
+  const [isOpen, setOpen] = (0, import_react23.useState)(false);
+  const [selectedData, setSelectedData] = (0, import_react23.useState)(value);
+  (0, import_react23.useEffect)(() => {
     (() => __async(void 0, null, function* () {
       if (field.adaptor) {
         const listData = yield field.adaptor.fetchList(field.adaptorParams);
@@ -949,7 +3053,7 @@ var ExternalInput = ({
               onClick: () => setOpen(true),
               className: getClassName5("button"),
               children: selectedData ? field.getItemSummary ? field.getItemSummary(selectedData) : `${field.adaptor.name} item` : /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)(import_jsx_runtime7.Fragment, { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(import_react_feather2.Link, { size: "16" }),
+                /* @__PURE__ */ (0, import_jsx_runtime7.jsx)(link_default, { size: "16" }),
                 /* @__PURE__ */ (0, import_jsx_runtime7.jsxs)("span", { children: [
                   "Select from ",
                   field.adaptor.name
@@ -1002,12 +3106,11 @@ var ExternalInput = ({
   );
 };
 
-// css-module:/home/sullija/dev/javascript/puck/packages/core/components/InputOrGroup/styles.module.css#css-module
+// css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/InputOrGroup/styles.module.css#css-module
 init_react_import();
-var styles_module_default4 = { "Input": "_Input_16exs_1", "Input-label": "_Input-label_16exs_27", "Input-labelIcon": "_Input-labelIcon_16exs_34", "Input-input": "_Input-input_16exs_39", "Input--readOnly": "_Input--readOnly_16exs_60", "Input-arrayItem": "_Input-arrayItem_16exs_69", "Input-fieldset": "_Input-fieldset_16exs_95", "Input-arrayItemAction": "_Input-arrayItemAction_16exs_117", "Input-addButton": "_Input-addButton_16exs_136", "Input-array": "_Input-array_16exs_69", "Input-radioGroupItems": "_Input-radioGroupItems_16exs_157", "Input-radio": "_Input-radio_16exs_157", "Input-radioInner": "_Input-radioInner_16exs_174", "Input-radioInput": "_Input-radioInput_16exs_186" };
+var styles_module_default4 = { "Input": "_Input_izwhv_1", "Input-label": "_Input-label_izwhv_27", "Input-labelIcon": "_Input-labelIcon_izwhv_34", "Input-input": "_Input-input_izwhv_39", "Input--readOnly": "_Input--readOnly_izwhv_60", "Input-arrayItem": "_Input-arrayItem_izwhv_69", "Input-fieldset": "_Input-fieldset_izwhv_95", "Input-arrayItemAction": "_Input-arrayItemAction_izwhv_116", "Input-addButton": "_Input-addButton_izwhv_135", "Input-array": "_Input-array_izwhv_69", "Input-radioGroupItems": "_Input-radioGroupItems_izwhv_156", "Input-radio": "_Input-radio_izwhv_156", "Input-radioInner": "_Input-radioInner_izwhv_173", "Input-radioInput": "_Input-radioInput_izwhv_185" };
 
 // components/InputOrGroup/index.tsx
-var import_react_feather3 = require("react-feather");
 var import_jsx_runtime8 = require("react/jsx-runtime");
 var getClassName6 = get_class_name_factory_default("Input", styles_module_default4);
 var FieldLabel = ({
@@ -1017,7 +3120,7 @@ var FieldLabel = ({
 }) => {
   return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("label", { children: [
     /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassName6("label"), children: [
-      icon && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("labelIcon") }),
+      icon ? /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("labelIcon"), children: icon }) : /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_jsx_runtime8.Fragment, {}),
       label
     ] }),
     children
@@ -1037,7 +3140,7 @@ var InputOrGroup = ({
     }
     return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassName6(), children: [
       /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("b", { className: getClassName6("label"), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("labelIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_react_feather3.List, { size: 16 }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("labelIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(list_default, { size: 16 }) }),
         label || name
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassName6("array"), children: [
@@ -1057,7 +3160,7 @@ var InputOrGroup = ({
                       onChange(existingValue);
                     },
                     title: "Delete",
-                    children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_react_feather3.Trash, { size: 21 })
+                    children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(trash_default, { size: 21 })
                   }
                 ) })
               ] }),
@@ -1110,7 +3213,7 @@ var InputOrGroup = ({
     }
     return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("label", { className: getClassName6(), children: [
       /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassName6("label"), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("labelIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_react_feather3.ChevronDown, { size: 16 }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("labelIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(chevron_down_default, { size: 16 }) }),
         label || name
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
@@ -1140,7 +3243,7 @@ var InputOrGroup = ({
   if (field.type === "textarea") {
     return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("label", { className: getClassName6({ readOnly }), children: [
       /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassName6("label"), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("labelIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_react_feather3.Type, { size: 16 }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("labelIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(type_default, { size: 16 }) }),
         label || name
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(
@@ -1163,7 +3266,7 @@ var InputOrGroup = ({
     }
     return /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6(), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassName6("radioGroup"), children: [
       /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassName6("label"), children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("labelIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_react_feather3.CheckCircle, { size: 16 }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("labelIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(check_circle_default, { size: 16 }) }),
         field.label || name
       ] }),
       /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: getClassName6("radioGroupItems"), children: field.options.map((option) => /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)(
@@ -1211,8 +3314,8 @@ var InputOrGroup = ({
   return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("label", { className: getClassName6({ readOnly }), children: [
     /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassName6("label"), children: [
       /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: getClassName6("labelIcon"), children: [
-        field.type === "text" && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_react_feather3.Type, { size: 16 }),
-        field.type === "number" && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(import_react_feather3.Hash, { size: 16 })
+        field.type === "text" && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(type_default, { size: 16 }),
+        field.type === "number" && /* @__PURE__ */ (0, import_jsx_runtime8.jsx)(hash_default, { size: 16 })
       ] }),
       label || name
     ] }),
@@ -1241,12 +3344,11 @@ var InputOrGroup = ({
 init_react_import();
 var import_react_beautiful_dnd3 = require("react-beautiful-dnd");
 
-// css-module:/home/sullija/dev/javascript/puck/packages/core/components/ComponentList/styles.module.css#css-module
+// css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/ComponentList/styles.module.css#css-module
 init_react_import();
 var styles_module_default5 = { "ComponentList": "_ComponentList_1ybn0_1", "ComponentList-item": "_ComponentList-item_1ybn0_9", "ComponentList-itemShadow": "_ComponentList-itemShadow_1ybn0_10", "ComponentList-itemIcon": "_ComponentList-itemIcon_1ybn0_28" };
 
 // components/ComponentList/index.tsx
-var import_react_feather4 = require("react-feather");
 var import_jsx_runtime9 = require("react/jsx-runtime");
 var getClassName7 = get_class_name_factory_default("ComponentList", styles_module_default5);
 var ComponentList = ({ config }) => {
@@ -1277,7 +3379,7 @@ var ComponentList = ({ config }) => {
                       }),
                       children: [
                         componentKey,
-                        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: getClassName7("itemIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(import_react_feather4.Grid, { size: 18 }) })
+                        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: getClassName7("itemIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(grid_default, { size: 18 }) })
                       ]
                     })
                   ),
@@ -1288,7 +3390,7 @@ var ComponentList = ({ config }) => {
                       style: { transform: "none !important" },
                       children: [
                         componentKey,
-                        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: getClassName7("itemIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(import_react_feather4.Grid, { size: 18 }) })
+                        /* @__PURE__ */ (0, import_jsx_runtime9.jsx)("div", { className: getClassName7("itemIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime9.jsx)(grid_default, { size: 18 }) })
                       ]
                     }
                   )
@@ -1306,10 +3408,10 @@ var ComponentList = ({ config }) => {
 
 // lib/use-placeholder-style.ts
 init_react_import();
-var import_react10 = require("react");
+var import_react24 = require("react");
 var usePlaceholderStyle = () => {
   const queryAttr = "data-rbd-drag-handle-draggable-id";
-  const [placeholderStyle, setPlaceholderStyle] = (0, import_react10.useState)();
+  const [placeholderStyle, setPlaceholderStyle] = (0, import_react24.useState)();
   const onDragStartOrUpdate = (draggedItem) => {
     var _a;
     const draggableId = draggedItem.draggableId;
@@ -1355,14 +3457,14 @@ var usePlaceholderStyle = () => {
 // components/SidebarSection/index.tsx
 init_react_import();
 
-// css-module:/home/sullija/dev/javascript/puck/packages/core/components/SidebarSection/styles.module.css#css-module
+// css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/SidebarSection/styles.module.css#css-module
 init_react_import();
-var styles_module_default6 = { "SidebarSection": "_SidebarSection_ivnrs_1", "SidebarSection-title": "_SidebarSection-title_ivnrs_11", "SidebarSection-content": "_SidebarSection-content_ivnrs_18", "SidebarSection--noPadding": "_SidebarSection--noPadding_ivnrs_23", "SidebarSection-breadcrumbLabel": "_SidebarSection-breadcrumbLabel_ivnrs_32", "SidebarSection-breadcrumbs": "_SidebarSection-breadcrumbs_ivnrs_43", "SidebarSection-breadcrumb": "_SidebarSection-breadcrumb_ivnrs_32", "SidebarSection-heading": "_SidebarSection-heading_ivnrs_55" };
+var styles_module_default6 = { "SidebarSection": "_SidebarSection_f1p35_1", "SidebarSection-title": "_SidebarSection-title_f1p35_12", "SidebarSection-content": "_SidebarSection-content_f1p35_19", "SidebarSection--noPadding": "_SidebarSection--noPadding_f1p35_24", "SidebarSection-breadcrumbLabel": "_SidebarSection-breadcrumbLabel_f1p35_33", "SidebarSection-breadcrumbs": "_SidebarSection-breadcrumbs_f1p35_44", "SidebarSection-breadcrumb": "_SidebarSection-breadcrumb_f1p35_33", "SidebarSection-heading": "_SidebarSection-heading_f1p35_56" };
 
 // components/Heading/index.tsx
 init_react_import();
 
-// css-module:/home/sullija/dev/javascript/puck/packages/core/components/Heading/styles.module.css#css-module
+// css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/Heading/styles.module.css#css-module
 init_react_import();
 var styles_module_default7 = { "Heading": "_Heading_1y35v_1", "Heading--xxxxl": "_Heading--xxxxl_1y35v_12", "Heading--xxxl": "_Heading--xxxl_1y35v_18", "Heading--xxl": "_Heading--xxl_1y35v_22", "Heading--xl": "_Heading--xl_1y35v_26", "Heading--l": "_Heading--l_1y35v_30", "Heading--m": "_Heading--m_1y35v_34", "Heading--s": "_Heading--s_1y35v_38", "Heading--xs": "_Heading--xs_1y35v_42" };
 
@@ -1383,7 +3485,6 @@ var Heading = ({ children, rank, size = "m" }) => {
 };
 
 // components/SidebarSection/index.tsx
-var import_react_feather5 = require("react-feather");
 var import_jsx_runtime11 = require("react/jsx-runtime");
 var getClassName9 = get_class_name_factory_default("SidebarSection", styles_module_default6);
 var SidebarSection = ({
@@ -1405,16 +3506,13 @@ var SidebarSection = ({
             children: breadcrumb.label
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(import_react_feather5.ChevronRight, { size: 16 })
+        /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(chevron_right_default, { size: 16 })
       ] }, i)),
       /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: getClassName9("heading"), children: /* @__PURE__ */ (0, import_jsx_runtime11.jsx)(Heading, { rank: 2, size: "xs", children: title }) })
     ] }) }),
     /* @__PURE__ */ (0, import_jsx_runtime11.jsx)("div", { className: getClassName9("content"), children })
   ] });
 };
-
-// components/Puck/index.tsx
-var import_react_feather7 = require("react-feather");
 
 // lib/reducer.ts
 init_react_import();
@@ -1506,12 +3604,125 @@ var duplicateRelatedZones = (item, data, newId) => {
   });
 };
 
+// lib/use-puck-history.ts
+init_react_import();
+var import_react26 = require("react");
+
+// lib/use-action-history.ts
+init_react_import();
+var import_react25 = require("react");
+var EMPTY_HISTORY_INDEX = -1;
+function useActionHistory() {
+  const [histories, setHistories] = (0, import_react25.useState)([]);
+  const [currentHistoryIndex, setCurrentHistoryIndex] = (0, import_react25.useState)(EMPTY_HISTORY_INDEX);
+  const currentHistory = histories[currentHistoryIndex];
+  const canRewind = currentHistoryIndex > EMPTY_HISTORY_INDEX;
+  const canForward = currentHistoryIndex < histories.length - 1;
+  const record = (params) => {
+    const history = __spreadValues({
+      id: Math.random().toString()
+    }, params);
+    setHistories((prev) => [
+      ...prev.slice(0, currentHistoryIndex + 1),
+      history
+    ]);
+    setCurrentHistoryIndex((prev) => prev + 1);
+  };
+  const rewind = () => {
+    if (canRewind) {
+      currentHistory.rewind();
+      setCurrentHistoryIndex((prev) => prev - 1);
+    }
+  };
+  const forward = () => {
+    const forwardHistory = histories[currentHistoryIndex + 1];
+    if (canForward && forwardHistory) {
+      forwardHistory.forward();
+      setCurrentHistoryIndex((prev) => prev + 1);
+    }
+  };
+  return {
+    currentHistory,
+    canRewind,
+    canForward,
+    record,
+    rewind,
+    forward
+  };
+}
+
+// lib/use-puck-history.ts
+var import_react_hotkeys_hook = require("react-hotkeys-hook");
+var import_event_emitter = __toESM(require("event-emitter"));
+var import_use_debounce2 = require("use-debounce");
+var import_deep_diff = require("deep-diff");
+var DEBOUNCE_TIME = 250;
+var RECORD_DIFF = "RECORD_DIFF";
+var historyEmitter = (0, import_event_emitter.default)();
+var recordDiff = (newData) => historyEmitter.emit(RECORD_DIFF, newData);
+function usePuckHistory({
+  data,
+  dispatch
+}) {
+  const { canForward, canRewind, rewind, forward, record } = useActionHistory();
+  (0, import_react_hotkeys_hook.useHotkeys)("meta+z", rewind, { preventDefault: true });
+  (0, import_react_hotkeys_hook.useHotkeys)("meta+shift+z", forward, { preventDefault: true });
+  (0, import_react_hotkeys_hook.useHotkeys)("meta+y", forward, { preventDefault: true });
+  const [snapshot] = (0, import_use_debounce2.useDebounce)(data, DEBOUNCE_TIME);
+  const handleRecordDiff = (0, import_use_debounce2.useDebouncedCallback)((newData) => {
+    const _diff = (0, import_deep_diff.diff)(snapshot, newData);
+    if (!_diff) {
+      return;
+    }
+    record({
+      forward: () => {
+        const target = structuredClone(data);
+        _diff.reduce((target2, change) => {
+          (0, import_deep_diff.applyChange)(target2, true, change);
+          return target2;
+        }, target);
+        dispatch({ type: "set", data: target });
+      },
+      rewind: () => {
+        const target = structuredClone(data);
+        _diff.reduce((target2, change) => {
+          (0, import_deep_diff.revertChange)(target2, true, change);
+          return target2;
+        }, target);
+        dispatch({ type: "set", data: target });
+      }
+    });
+  }, DEBOUNCE_TIME);
+  (0, import_react26.useEffect)(() => {
+    historyEmitter.on(RECORD_DIFF, handleRecordDiff);
+    return () => {
+      historyEmitter.off(RECORD_DIFF, handleRecordDiff);
+    };
+  }, [handleRecordDiff]);
+  return {
+    canForward,
+    canRewind,
+    rewind,
+    forward,
+    record
+  };
+}
+
 // lib/reducer.ts
 var zoneCache = {};
 var addToZoneCache = (key, data) => {
   zoneCache[key] = data;
 };
-var createReducer = ({ config }) => (data, action) => {
+var storeInterceptor = (reducer) => {
+  return (data, action) => {
+    const newData = reducer(data, action);
+    if (!["registerZone", "unregisterZone", "set"].includes(action.type)) {
+      recordDiff(newData);
+    }
+    return newData;
+  };
+};
+var createReducer = ({ config }) => storeInterceptor((data, action) => {
   if (action.type === "insert") {
     const emptyComponentData = {
       type: action.componentType,
@@ -1695,12 +3906,12 @@ var createReducer = ({ config }) => (data, action) => {
     return __spreadValues(__spreadValues({}, data), action.data);
   }
   return data;
-};
+});
 
 // components/LayerTree/index.tsx
 init_react_import();
 
-// css-module:/home/sullija/dev/javascript/puck/packages/core/components/LayerTree/styles.module.css#css-module
+// css-module:/home/sullija/dev/javascript/puck_demo/measured/puck/components/LayerTree/styles.module.css#css-module
 init_react_import();
 var styles_module_default8 = { "LayerTree": "_LayerTree_1dcmd_1", "LayerTree-zoneTitle": "_LayerTree-zoneTitle_1dcmd_11", "LayerTree-helper": "_LayerTree-helper_1dcmd_17", "Layer": "_Layer_1dcmd_1", "Layer-inner": "_Layer-inner_1dcmd_29", "Layer--containsZone": "_Layer--containsZone_1dcmd_35", "Layer-clickable": "_Layer-clickable_1dcmd_39", "Layer--isSelected": "_Layer--isSelected_1dcmd_48", "Layer--isHovering": "_Layer--isHovering_1dcmd_49", "Layer-chevron": "_Layer-chevron_1dcmd_65", "Layer--childIsSelected": "_Layer--childIsSelected_1dcmd_66", "Layer-zones": "_Layer-zones_1dcmd_70", "Layer-title": "_Layer-title_1dcmd_84", "Layer-icon": "_Layer-icon_1dcmd_92", "Layer-zoneIcon": "_Layer-zoneIcon_1dcmd_97" };
 
@@ -1716,8 +3927,7 @@ var scrollIntoView = (el) => {
 };
 
 // components/LayerTree/index.tsx
-var import_react_feather6 = require("react-feather");
-var import_react11 = require("react");
+var import_react27 = require("react");
 
 // lib/find-zones-for-area.ts
 init_react_import();
@@ -1758,10 +3968,10 @@ var LayerTree = ({
   label
 }) => {
   const zones = data.zones || {};
-  const ctx = (0, import_react11.useContext)(dropZoneContext);
+  const ctx = (0, import_react27.useContext)(dropZoneContext);
   return /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)(import_jsx_runtime12.Fragment, { children: [
     label && /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: getClassName10("zoneTitle"), children: [
-      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: getClassName10("zoneIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(import_react_feather6.Layers, { size: "16" }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: getClassName10("zoneIcon"), children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(layers_default, { size: "16" }) }),
       " ",
       label
     ] }),
@@ -1827,11 +4037,11 @@ var LayerTree = ({
                       {
                         className: getClassNameLayer("chevron"),
                         title: isSelected ? "Collapse" : "Expand",
-                        children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(import_react_feather6.ChevronDown, { size: "12" })
+                        children: /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(chevron_down_default, { size: "12" })
                       }
                     ),
                     /* @__PURE__ */ (0, import_jsx_runtime12.jsxs)("div", { className: getClassNameLayer("title"), children: [
-                      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: getClassNameLayer("icon"), children: item.type === "Text" || item.type === "Heading" ? /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(import_react_feather6.Type, { size: "16" }) : /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(import_react_feather6.Grid, { size: "16" }) }),
+                      /* @__PURE__ */ (0, import_jsx_runtime12.jsx)("div", { className: getClassNameLayer("icon"), children: item.type === "Text" || item.type === "Heading" ? /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(type_default, { size: "16" }) : /* @__PURE__ */ (0, import_jsx_runtime12.jsx)(grid_default, { size: "16" }) }),
                       item.type
                     ] })
                   ]
@@ -1907,14 +4117,18 @@ function Puck({
   headerPath
 }) {
   var _a, _b;
-  const [reducer] = (0, import_react12.useState)(() => createReducer({ config }));
-  const [data, dispatch] = (0, import_react12.useReducer)(
+  const [reducer] = (0, import_react28.useState)(() => createReducer({ config }));
+  const [data, dispatch] = (0, import_react28.useReducer)(
     reducer,
     flushZones(initialData)
   );
-  const [itemSelector, setItemSelector] = (0, import_react12.useState)(null);
+  const { canForward, canRewind, rewind, forward } = usePuckHistory({
+    data,
+    dispatch
+  });
+  const [itemSelector, setItemSelector] = (0, import_react28.useState)(null);
   const selectedItem = itemSelector ? getItem(itemSelector, data) : null;
-  const Page = (0, import_react12.useCallback)(
+  const Page = (0, import_react28.useCallback)(
     (pageProps) => {
       var _a2, _b2;
       return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
@@ -1929,7 +4143,7 @@ function Puck({
     },
     [config.root]
   );
-  const PageFieldWrapper = (0, import_react12.useCallback)(
+  const PageFieldWrapper = (0, import_react28.useCallback)(
     (props) => /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       PluginRenderer,
       {
@@ -1941,7 +4155,7 @@ function Puck({
     ),
     []
   );
-  const ComponentFieldWrapper = (0, import_react12.useCallback)(
+  const ComponentFieldWrapper = (0, import_react28.useCallback)(
     (props) => /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
       PluginRenderer,
       {
@@ -1956,13 +4170,13 @@ function Puck({
   const FieldWrapper = itemSelector ? ComponentFieldWrapper : PageFieldWrapper;
   const rootFields = ((_a = config.root) == null ? void 0 : _a.fields) || defaultPageFields;
   let fields = selectedItem ? ((_b = config.components[selectedItem.type]) == null ? void 0 : _b.fields) || {} : rootFields;
-  (0, import_react12.useEffect)(() => {
+  (0, import_react28.useEffect)(() => {
     if (onChange)
       onChange(data);
   }, [data]);
   const { onDragStartOrUpdate, placeholderStyle } = usePlaceholderStyle();
-  const [leftSidebarVisible, setLeftSidebarVisible] = (0, import_react12.useState)(true);
-  const [draggedItem, setDraggedItem] = (0, import_react12.useState)();
+  const [leftSidebarVisible, setLeftSidebarVisible] = (0, import_react28.useState)(true);
+  const [draggedItem, setDraggedItem] = (0, import_react28.useState)();
   return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { className: "puck", children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
     import_react_beautiful_dnd4.DragDropContext,
     {
@@ -2056,6 +4270,8 @@ function Puck({
                     {
                       style: {
                         gridArea: "header",
+                        color: "var(--puck-color-black)",
+                        background: "var(--puck-color-white)",
                         borderBottom: "1px solid var(--puck-color-grey-8)"
                       },
                       children: renderHeader ? renderHeader({
@@ -2065,7 +4281,7 @@ function Puck({
                             onClick: () => {
                               onPublish(data);
                             },
-                            icon: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_react_feather7.Globe, { size: "14px" }),
+                            icon: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(globe_default, { size: "14px" }),
                             children: "Publish"
                           }
                         ),
@@ -2094,7 +4310,7 @@ function Puck({
                                   {
                                     onClick: () => setLeftSidebarVisible(!leftSidebarVisible),
                                     title: "Toggle left sidebar",
-                                    children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_react_feather7.Sidebar, {})
+                                    children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(sidebar_default, {})
                                   }
                                 )
                               }
@@ -2122,6 +4338,38 @@ function Puck({
                                   justifyContent: "flex-end"
                                 },
                                 children: [
+                                  /* @__PURE__ */ (0, import_jsx_runtime13.jsxs)("div", { style: { display: "flex" }, children: [
+                                    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+                                      IconButton,
+                                      {
+                                        title: "undo",
+                                        disabled: !canRewind,
+                                        onClick: rewind,
+                                        children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+                                          chevron_left_default,
+                                          {
+                                            size: 21,
+                                            stroke: canRewind ? "var(--puck-color-black)" : "var(--puck-color-grey-7)"
+                                          }
+                                        )
+                                      }
+                                    ),
+                                    /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+                                      IconButton,
+                                      {
+                                        title: "redo",
+                                        disabled: !canForward,
+                                        onClick: forward,
+                                        children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
+                                          chevron_right_default,
+                                          {
+                                            size: 21,
+                                            stroke: canForward ? "var(--puck-color-black)" : "var(--puck-color-grey-7)"
+                                          }
+                                        )
+                                      }
+                                    )
+                                  ] }),
                                   renderHeaderActions && renderHeaderActions({ data, dispatch }),
                                   /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                                     Button,
@@ -2129,7 +4377,7 @@ function Puck({
                                       onClick: () => {
                                         onPublish(data);
                                       },
-                                      icon: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(import_react_feather7.Globe, { size: "14px" }),
+                                      icon: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(globe_default, { size: "14px" }),
                                       children: "Publish"
                                     }
                                   )
@@ -2189,7 +4437,6 @@ function Puck({
                     "div",
                     {
                       style: {
-                        background: "var(--puck-color-grey-10)",
                         padding: 32,
                         overflowY: "auto",
                         gridArea: "editor",
@@ -2202,8 +4449,8 @@ function Puck({
                         {
                           className: "puck-root",
                           style: {
-                            background: "white",
                             border: "1px solid var(--puck-color-grey-8)",
+                            boxShadow: "0px 0px 0px 3rem var(--puck-color-grey-10)",
                             zoom: 0.75
                           },
                           children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(Page, __spreadProps(__spreadValues({ data }, data.root), { children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(DropZone, { zone: rootDroppableId }) }))
@@ -2220,7 +4467,8 @@ function Puck({
                         gridArea: "right",
                         fontFamily: "var(--puck-font-stack)",
                         display: "flex",
-                        flexDirection: "column"
+                        flexDirection: "column",
+                        background: "var(--puck-color-white)"
                       },
                       children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(FieldWrapper, { data, children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)(
                         SidebarSection,
@@ -2352,5 +4600,32 @@ classnames/index.js:
   	Copyright (c) 2018 Jed Watson.
   	Licensed under the MIT License (MIT), see
   	http://jedwatson.github.io/classnames
+  *)
+
+react-is/cjs/react-is.production.min.js:
+  (** @license React v16.13.1
+   * react-is.production.min.js
+   *
+   * Copyright (c) Facebook, Inc. and its affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   *)
+
+react-is/cjs/react-is.development.js:
+  (** @license React v16.13.1
+   * react-is.development.js
+   *
+   * Copyright (c) Facebook, Inc. and its affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   *)
+
+object-assign/index.js:
+  (*
+  object-assign
+  (c) Sindre Sorhus
+  @license MIT
   *)
 */
